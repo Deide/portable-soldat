@@ -1,0 +1,19 @@
+----------------------------------------------------------------
+Demo files usage:
+- Soldat.exe -demo name (freecam speed notexts extract)
+(runs the game and plays the demo specified by name. Optional paramaters are: 
+freecam (0/1) - the user can freely change the camera (default 0)
+speed (0-...%)- how quick the playback will be specified in percents (default 100%)
+notexts (0/1) - no texts, menus or cursor will be displayed during playback (default 100%)
+extract (0/1) - extracts the demo to BMP files (default 0). Later they can be used to make an AVI file in a program like "Bmp2Avi".
+The sound can be extracted with a program like "Total Recorder". Please note that this can take time and is not recommended on slower systems. For better results specify lower speed (like 50%).
+example:
+Soldat.exe -demo demo12
+Soldat.exe -demo demo19 1 200 1 0
+)
+
+Press f8 to fast forward demos.
+----------------------------------------------------------------
+
+Soldat\Demos\Extracted\ - This is were the extracted BMPs from Soldat SDM files are placed.
+More information in the Soldat manual.

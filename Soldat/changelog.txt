@@ -1,0 +1,94 @@
+* GAME VERSION 1.7.1 *
+
+- Modified optimized bullet collisions
+- Modified optimized object collisions
+- Modified removed infinite saw ammo
+- Modified disabled client-side taunt anti-flood protection if taunt is a command
+- Modified damage calculations to use hitbox modifiers now provided by WM  file (previously it was dividing some values to give more precision in a quirky and artificial way)
+- Modified WM file values are now not altered by soldat in any way
+- Modified WM file now supports decimal values
+- Modified stop rendering when soldat window isn't active
+- Modified Health and Vest are now stored as decimal values
+- Modified default control keys, Prone is now F, throw flag is now LCTRL, grenade is now SPACE, drop weapon/throw knife is now SHIFT
+- Modified Bullet time is now disabled by default
+- Fixed bots using kill taunt on selfkill
+- Fixed console showing less lines than actually fit on screen while open
+- Fixed off by one bug in radio menu
+- Fixed client WM checksum checks
+- Removed splashscreen
+
+Grahpics:
+- New versions of medkit and vest graphics
+- 4K UHD blood particles
+- 4K UHD sceneries: bushes, rubble, grass & jungle sceneries, other
+- Added a few brand new sceneries
+- New arrow, bow, flamer, missle and statgun gfx
+
+WM Changes
+Shared:
+- Damage values are now divided by 100 compared to all weapons.ini files before 1.7.1. (Example: 1.7.0 and earlier: "Damage=181" Now: "Damage=1.81")
+- Speed values are now divided by 10
+- BulletSpread values are now divided by 100
+- Inherited Velocity values are now divided by 100
+- MovementAcc values are now divided by 200
+- Push values are now divided by 2500
+- Added HitboxModifiers for all weapons
+- Added option to set ReloadTime and Ammo for the Chainsaw
+
+Normal:
+- Reduced overall damage by 5% for: Desert Eagles, HK MP5, AK47,  Steyr-AUG, Spas-12, FN-Minimi, XM214 Minigun, Ussocom and StatGun via the HitboxModifiers
+- Desert Eagles: Movement Acc: 0 -> 1.8 = 0.009
+- AK-74: Damage: 111 -> 100.4 = 1.004
+- AK-74: FireInterval: 11 -> 10 = 10
+- AK-74: ReloadTime:  150 -> 165 = 165
+- AK-74: Ammo: 40 -> 35 = 35
+- AK-74: Speed 240 -> 246 = 2.46
+- AK-74: Bink: 0 -> -12 = -12
+- AK-74: MovementAcc: 0 -> 2.2 = 0.011
+- AK-74: BulletSpread: 9 -> 2.5 = 0.025
+- AK-74: Push: 35 -> 34.4 = 0.01376
+- Steyr Aug: BulletSpread: 7 -> 7.5 = 0,075
+- Ruger: 10% more leg damage, 5% more torso damage and 5% more headshot damage
+- Ruger: FireInterval: 39 -> 45 = 45
+- Ruger: ReloadTime: 84 -> 78 = 78
+- Barret 15% less headshot damage and 10% more leg damage
+- Barret: MovementAcc: 11 -> 10 = 0.05
+- FN-Minimi: BulletSpread: 6 -> 6.4 = 0.064
+- FN-Minimi: MovementAcc: 3 -> 2.6 = 0.013
+- Minigun: Damage: 49 -> 46.8 = 0.468
+- Minigun: Reloadtime: 260 -> 480 = 480
+- Minigun: Push: 29 -> 26 = 0.0104
+- Minigun: MovementAcc: 0 -> 12.5 = 0.065
+- Ussocom: Ammo: 12 -> 14 = 14
+- Ussocom: ReloadTime: 52 -> 60 = 60
+- Chainsaw: Ammo: 0 -> 200 = 200
+- Chainsaw: ReloadTime: 0 -> 110 = 110
+- Chainsaw: Fireinterval: 1 -> 2 = 2
+
+Realistic:
+- Chainsaw: Ammo: 0 -> 200 = 200
+- Chainsaw: ReloadTime: 0 -> 110 = 110
+- Chainsaw: Fireinterval: 1 -> 2 = 2
+
+* GAME VERSION 1.7.1b1 *
+
+Client:
+- Modified optimized bullet collisions
+- Modified optimized object collisions
+- Modified removed infinite saw ammo
+- Modified disabled client-side taunt anti-flood protection if taunt is a command
+- Modified damage calculations to use hitbox modifiers now provided by WM file (previously it was dividing some values to give more precision in a quirky and artificial way)
+- Modified WM file values are now not altered by soldat in any way
+- Modified WM file now supports decimal values (decimal? floating point? idk how to call that)
+- Modified stop rendering when soldat window isn't active
+- Modified Health and Vest are now stored as decimal values
+- Fixed bots using kill taunt on selfkill
+- Fixed console showing less lines than actually fit on screen while open
+- Fixed off by one bug in radio menu
+- Removed splashscreen
+
+Grahpics:
+- New versions of medkit and vest graphics
+- 4K UHD blood particles.
+- 4K UHD sceneries: bushes, rubble, some grass & jungle bushes, other
+- New arrow, bow, flamer, missle and statgun gfx

@@ -1,0 +1,3339 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+
+  <meta name="Keywords" content="">
+
+  <meta name="Author" content="Michal Marcinkowski">
+
+
+  <title>Soldat - Manual</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <style type="text/css">
+<!--
+body,td,th {
+	font-size: small;
+	font-family: Courier;
+}
+.style8 {font-size: small}
+.style10 {font-size: 9px}
+-->
+  </style>
+</head>
+
+<body alink="#990000" background="bak.gif" bgcolor="#000000" link="#660000" text="#010101" vlink="#220000">
+
+
+<font face="Courier" size="3">
+</font>
+<center>
+
+<p><font face="Courier" size="3"><b><br>
+
+===-=-=----- </b> </font></p>
+
+
+ 
+ 
+
+<big><big><font face="Courier" size="3"><big><big>
+<b>SOLDAT 1.4.0 (c) 2001-07 Michal Marcinkowski</b>
+</big></big></font></big></big>
+
+<p><font face="Courier" size="3"><b>-----=-=-===</b></font></p>
+
+<p>&nbsp;</p>
+
+<font face="Courier" size="3"><img src="title.gif" height="136" width="563">
+</font>
+<p>&nbsp;</p>
+
+
+
+
+
+
+<font face="Courier" size="3"><b><font face="Courier" size="5">
+:=-==SOLDAT マニュアル (29.04.07 Japanese)==-=:</font></b></font>
+<p><font face="Courier" size="3">&nbsp;</font></p>
+
+</center>
+
+<font face="Courier" size="3"><font face="Courier" size="3">
+<p align="center"><a name="INDEX"><font color="#000000">目次: </font></a> <br>
+
+<a href="#WSTEP">はじめに</a><br>
+
+<a href="#WYMAGANIA">動作環境</a><br>
+
+<a href="#START">ストーリー</a><br>
+
+<a href="#START">ゲームの始め方</a><br>
+
+<a href="#KLAWISZE">操作方法</a><br>
+
+<a href="#GRY">ゲームモード</a><br>
+
+<a href="#OPCJE">オプション</a><br>
+
+<a href="#EKRAN">メイン画面</a><br>
+
+<a href="#BRONIE">武器</a><br>
+
+<a href="#BONUSY">ボーナス</a><br>
+
+<a href="#KOMENDY">コマンド</a><br>
+
+<a href="#BRONIE">チャット</a> <br>
+
+<a href="#DEDYK">Dedicatedサーバー</a><br>
+
+<a href="#CHEAT">チートの予防</a><br>
+
+<a href="#HISTORIA">開発履歴</a><br>
+
+<a href="#DYSTRYBUCJA">ライセンス</a><br>
+
+<a href="#LISTA">謝辞</a><br>
+
+<a href="#KONTAKT">連絡先</a><br>
+
+&nbsp;</p>
+
+
+<p align="center">Soldatの登録 - <a href="register-jp.html">ここを参照</a><br>
+
+
+<img src="line.png" border="0" height="5" width="640"></p>
+
+
+<p align="center">&nbsp;</p>
+
+
+<a name="WSTEP"> 
+<p><i><b><font size="4">:---===</font></b></i><font size="4"><b><i>はじめに:</i></b></font></p>
+ </a>
+<p>&nbsp;&nbsp;&nbsp; Soldatは独特なサイドビュー多人数アクションゲームです。Liero、Worms、Quake、Counter-Strikeなどのゲームを参考にして作られました。大量の飛び散る血液と肉片と共にスピード感のあるプレイが出来るでしょう。Soldierたちは様々な武器が備えられた2Dの競技場で互いに戦います。</p>
+
+<p><img src="line.png" border="0" height="5" width="640"></p>
+
+<p>&nbsp;</p>
+
+<a name="WYMAGANIA">
+<p><i><b><font size="4">:---===動作環境: </font> </b></i></p>
+</a>
+<p><b>最小動作環境:<br>
+
+</b>- PC、キーボード、マウス、脳味噌<b><br>
+
+</b>- 333MHz以上のCPU<br>
+
+- Direct3D対応のビデオチップ<br>
+
+- DirextX8.1互換のグラフィックボード<br>
+
+- 32MBメモリ<br>
+
+- 数MBのHDの空き<br>
+
+- サウンドカード<br>
+
+- LANボードかモデム<br>
+
+- Microsoft Windows 98/Me/2000/XP<br>
+
+- Microsoft DirectX 8.1 </p>
+
+<p><img src="line.png" border="0" height="5" width="640"></p>
+
+<p>&nbsp;</p>
+
+<a name="FABULA">
+<p><i><b><font size="4">:---===ストーリー</font> </b></i> </p>
+</a>
+<p>&nbsp;&nbsp;&nbsp; Quakeの形式:<br>
+
+数人の漢たちが殺しあうことになりました。そのうちの一人はあなたです。<br>
+
+<br>
+
+<img src="line.png" border="0" height="5" width="640"></p>
+
+<p>&nbsp;</p>
+
+
+</font><font size="3">
+<p><b><i><font size="4"><a name="START"><font face="Courier" size="4">:---===ゲームの始め方
+</font></a> </font> </i> </b> </p>
+
+</font>
+<font face="Courier" size="3">
+</font></font>
+<p><font face="Courier" size="3"><font face="Courier" size="3"><b>&nbsp;シングルプレイ</b></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">一番楽な方法:<br>
+
+- 画面右側の<i>MAPS(マップ)</i>の欄を選択します。<br>
+
+- さらに右側にある<i>BOTS(BOT)</i>の欄を選択するか、<i>RANDOM BOTS(ランダムBOT)</i>の欄を選択します。<br>
+
+- <i>START GAME(ゲームを開始する)</i>ボタンをクリックしてください。</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><br>
+
+<b>&nbsp;マルチプレイ</b></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">&nbsp;他の人とプレイしたい場合はまずどうするかを決める必要があります:<br>
+
+<br>
+
+a) サーバーを立ち上げ他の人からの参加を待つ<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp; <i>OPTIONS(オプション)</i>メニューをクリックしてください。<i>NETWORK(ネットワーク)</i>の欄から接続の種類を選択します(<i>Connection（接続環境）</i> - <i>LAN</i> /<i>Internet</i>)。プレイヤー数の上限を設定してください(<i>Max Players（最大プレイヤー数）</i> - 回線速度が遅いならば少なくするべきです)。<i>ロビーサーバ</i>に登録することもできます(<i>REGISTER IN LOBBY SERVERS（ロビーサーバに登録）</i>)。こうすると他のプレーヤーが<i>JOIN GAME（他のゲームへ参加）</i>メニューからあなたのサーバーを検索できるのです。次にゲームモードを選択します。リストからマップをいくつか選び最初の画面の<i>START GAME(ゲームを開始する)</i>をクリックしてください。ロビーサーバへの登録に成功していればゲーム中にメッセージが流れます。</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">b) すでにあるサーバーへ参加する</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">&nbsp;&nbsp;&nbsp; <i>JOIN GAME（他のゲームへ参加）</i>メニューをクリックしてください。サーバーのIPが分かっている場合は<i>REMOTE HOST IP（ゲームサーバIP）</i>欄に入力してください。サーバーを検索したいのであれば<i>REQUEST SERVERS（サーバリストの更新）</i>をクリックしてください。 <i>PING</i>が低く空きのあるサーバーを選びダブルクリックするか<i>
+JOIN GAME（ゲームに参加）</i>をクリックしてください。</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><img src="line.png" border="0" height="5" width="768"></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">&nbsp;</font></font></p>
+
+<p>
+<font face="Courier" size="3"><font face="Courier" size="3"><a name="KLAWISZE"><i><b><font size="4">:---===デフォルトの操作方法: </font> </b></i></a></font></font></p>
+
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><img src="keys.png" border="0" height="149" width="412"></font></font></p>
+
+
+<p class="style8"><font face="Courier" size="3"><font face="Courier"><span style="background-color: rgb(149, 232, 151);">[A]</span> - 左移動<br>
+
+  <span style="background-color: rgb(149, 232, 151);">[D]</span> - 右移動<br>
+
+  <span style="background-color: rgb(149, 232, 151);">[W]</span> - ジャンプ<br>
+
+  <span style="background-color: rgb(149, 232, 151);">[S]</span> - しゃがみ<br>
+
+  <span style="background-color: rgb(255, 255, 255);">[左クリック]</span> - 発砲<br>
+
+  <span style="background-color: rgb(255, 255, 255);">[右クリック]</span> - ジェット<br>
+
+  <span style="background-color: rgb(175, 116, 107);">[E]</span> - 押して放すと手榴弾投擲（距離は押す時間に比例）<br>
+
+  <span style="background-color: rgb(219, 208, 72);">[F]</span> - 使用中の武器を捨てる（投げる）<br>
+
+  <span style="background-color: rgb(0, 102, 153);">[X]</span> - 伏せ<br>
+
+  <span style="background-color: rgb(94, 107, 206);">[Q]</span> - 武器切り替え<br>
+
+  <span style="background-color: rgb(215, 134, 74);">[R]</span> - 武器のリロード<br>
+
+  <span style="background-color: rgb(101, 169, 135);">[T]</span> - チャット<br>
+
+  <span style="background-color: rgb(255, 255, 0);">[Tab]</span> - 復活時間中の武器選択画面の表示/非表示の切り替え</font></font></p>
+
+<p class="style8"><font face="Courier" size="3"><font face="Courier">上記の設定は<i>PLAYER（プレイヤー）</i>メニューから変更が可能です。</font></font></p>
+
+<p class="style8"><font face="Courier" size="3">特殊技:<br>
+
+  <font face="Courier">旗投げ - ジャンプ + しゃがみ (デフォルトはW+S) <br>
+
+  バックフリップ<font face="Courier"> - 後方へジャンプしジェットボタンを押す</font></font></font></p>
+
+<p class="style8"><font face="Courier" size="3"><font face="Courier"><br>
+
+    <span style="background-color: rgb(89, 151, 162);">[/]</span> - コマンドの入力<br>
+
+    <span style="background-color: rgb(177, 101, 134);">[F1]</span> - スコア画面の表示<br>
+
+    <span style="background-color: rgb(177, 101, 134);">[F2]</span> - ミニマップの表示/非表示 / [ALT + F2] - </font></font><font face="Courier" size="3"><font face="Courier">スナイパーラインの表示/非表示</font></font><font face="Courier" size="3"><font face="Courier"><br>
+
+    <span style="background-color: rgb(177, 101, 134);">[F3]</span> - 統計値(FPS、ping、
+通信量) / </font></font><font face="Courier" size="3"><font face="Courier">[ALT + F3] -&nbsp;</font></font><font face="Courier" size="3"><font face="Courier">プレイヤー名の表示</font></font><font face="Courier" size="3"><font face="Courier"> </font></font><br>
+<font face="Courier" size="3"><font face="Courier"><span style="background-color: rgb(177, 101, 134);">
+</span>
+<span style="background-color: rgb(179, 113, 155);">[F4]</span> - スクリーンショットの撮影(<i>Soldat\Screens</i>に保存)<br>
+
+<span style="background-color: rgb(177, 101, 134);">[F5]</span> - 音楽の停止/再生<br>
+
+<span style="background-color: rgb(177, 101, 134);">[F6]</span> - 前の曲<span style="background-color: rgb(177, 101, 134);"><br>
+
+[F7]</span> - 次の曲</font><span style="background-color: rgb(177, 101, 134);"><br>
+
+  [F8]</span> - DEMOの録画/停止 / デモ再生中は高速再生<span style="background-color: rgb(177, 101, 134);"><br>
+
+  [F9]</span> - 最小化<span style="background-color: rgb(177, 101, 134);"><br>
+
+  [F10]</span> - ゲームの一時停止<span style="background-color: rgb(171, 201, 198);"><br>
+
+  [ALT]</span> - + a,b,c... or 
+  1,2,3...0 keys - 登録したコマンド、チャットの発言<br>
+
+  <span style="background-color: rgb(163, 92, 95);">[ESC]</span> - メニュー画面の表示</font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3">
+<p><img src="line.png" border="0" height="5" width="640"></p>
+
+<p>&nbsp;</p>
+
+<a name="GRY">
+<p><i><b><font size="4">:---===ゲームモード: </font> </b></i></p>
+</a>
+<p><b>1. Deathmatch<br>
+
+<img src="deathmatch.jpg" border="0" height="75" width="120"></b>&nbsp;&nbsp;&nbsp; 
+みんなで殺し合います。キル数の最も多いプレイヤーが勝利となります。<br>
+
+推奨の <i>Respawn Time（復活時間）</i>: 3-6 秒<br>
+
+&nbsp;</p>
+
+<p><b>2. Pointmatch<br>
+
+<img src="pointmatch.jpg" border="0" height="75" width="120"></b>&nbsp;&nbsp;&nbsp; 
+<i>Deathmatch</i>と同じではありますがこのモードではポイントを競って争います。マップ上には黄旗があり、それを持っていると殺害することによって得られるポイントが倍になります。連続キルでも多くのポイントを得ることが出来ます。例えば2人を連続で殺すと2倍になり3人殺すと4倍のポイントが得られます。もし旗を持って6人を連続で殺すと64ポイントが手に入るのです！<br>
+
+推奨の <i>Respawn Time（復活時間）</i>: 3-6 秒</p>
+
+</font></font>
+<p><font face="Courier" size="3"><font face="Courier" size="3"><br>
+
+<b>3. Rambomatch<br>
+
+<img src="rambomatch.jpg" border="0" height="75" width="120"></b>&nbsp;&nbsp;&nbsp; 
+Rambo - 早い者勝ちルールです。マップ上にはJohn Ramboの弓があります。弓を持っているプレイヤーはものすごい力を身につけ体力が自動回復します。弓を持ったRamboのみがポイントを得られるので他のプレイヤーはRamboを殺して弓を奪いましょう。<br>
+
+推奨の <i>Respawn Time（復活時間）</i>: 6-10 秒</font></font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3"></font></font>
+<p><font face="Courier" size="3"><font face="Courier" size="3"><br>
+
+<b>4. Teammatch<br>
+
+<img src="teammatch.jpg" border="0" height="75" width="120"></b>&nbsp;&nbsp;&nbsp; 
+最大4チーム(Alpha Team, Bravo Team, Charlie Team, Delta 
+Team)に分かれて殺し合います。もっとも高いスコア（キル数）のチームが勝利となります。<br>
+
+&nbsp;</font></font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3">
+</font></font>
+<p><font face="Courier" size="3"><font face="Courier" size="3"><b>5. Capture the Flag<br>
+
+<img src="ctf.jpg" border="0" height="75" width="120"></b>&nbsp;&nbsp;&nbsp; 2チーム(Alpha Team &amp; Bravo Team)による競争です。スコアを得るには相手チームの旗を奪い自陣の旗に持って帰らなければなりません。<br>
+
+&nbsp;</font></font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3">
+<p><b>6. Infiltration</b></p>
+
+<p><b>
+<img src="infiltration.jpg" border="0" height="75" width="120"></b>&nbsp;&nbsp;&nbsp; 
+2チーム(Alpha Team and Beta Team)に分かれます。青チームには自陣に黒旗がありこれを死守します。赤チームはこの黒旗を奪い白旗のところに持ち帰るのが目標です。(大抵は赤チームの復活地点の近く) 
+Realistic Modeを推奨</p>
+
+</font>
+</font>
+<p><font face="Courier" size="3"><font face="Courier" size="3"><b>7. Hold the flag </b></font></font></p>
+
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><b> <img src="htf.jpg" border="0" height="74" width="120"></b>&nbsp;&nbsp;&nbsp;
+2チーム(Alpha Team and Beta Team)が黄旗を巡って争います。旗を持っているチームには数秒ごとにポイントが入ります。</font></font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3">
+<p>&nbsp;</p>
+
+<p><img src="line.png" border="0" height="5" width="640"></p>
+
+<p>&nbsp;</p>
+
+<a name="OPCJE">
+<p><i><b><font size="4">:---===オプション: </font> </b></i></p>
+
+</a>
+<p><b><i>OPTIONS（オプション）</i>メニューで設定可能な項目:</b></p>
+
+<p><b>
+<img src="options.png" border="0"></b></p>
+
+<p><b>- GAME（ゲーム）</b></p>
+
+</font>
+</font>
+<p><font face="Courier" size="3"><font face="Courier" size="3"><b><i>Respawn Time（復活時間）:<br>
+
+Normal Respawn（標準で使用する時間）</i></b> - <br>
+
+死亡後から復活までの待ち時間です。（秒単位）<br>
+
+<i>Deathmatch</i>、<i>Pointmatch</i>、<i>Rambomatch</i>で適用されます。<br>
+
+<i><b>Maximum Time in Team Games（チームゲームで使用する時間）</b></i> -<br>
+
+チーム戦(<i>Teammatch</i>, <i>Capture the Flag</i>, <i>Infiltration</i>)における復活の仕組みは<i>Wave Respawn（波状型復活）</i>と呼ばれます。
+
+ゲーム中にはすべてのプレイヤーに適用される復活タイマーがあります。これはゲーム中のプレイヤー数に基づく周期です。これが0になるとその前に死亡していたプレイヤーは全員復活し復活タイマーが再びセットされます。<br>
+
+例: 20人（各チーム10人ずつ）がいる場合、タイマーは40秒ごとに0になります。40秒毎にその時までに死亡したプレイヤーが全員復活するということです。<br>
+<i>Maximum Time in Team 
+Games（チームゲームで使用する時間）</i>はこのタイマーが長くなりすぎるのを防ぐために使用されます。あなたが設定した時間まで短くなるということです。<br>
+
+<b><i>Bonuses（ボーナス）:</i><br>
+
+</b>ボーナスアイテムの使用の有無を設定します。<b>.<br>
+
+<i>Frequency（出現間隔） -</i><br>
+
+</b>ボーナスアイテムが発生する間隔です。 0 - なし 5 - 頻繁<br>
+
+<b><i>Weapons（武器）:</i><br>
+
+</b>武器の使用の有無を設定します。<br>
+
+<b><i>Maximum Grenades（手榴弾の最大所持数）:<br>
+
+</i>
+</b>一度にもてる手榴弾の最大数です。この数だけ箱の中に手榴弾が含まれています。復活時にはこの数の半分を持っています。<b><i><br>
+
+Friendly Fire（味方への攻撃） -<br>
+
+</i>
+</b>これをチェックすると味方を殺すことができるようになります。マルチプレイで使用するのはお勧めしません。<br>
+
+<b><i>Bullet Time（バレットタイム）<br>
+
+</i> </b>全プレイヤーが近く（1つの画面内）にいる状態でだれかが殺されると映画のスローモーション効果に使われるバレットタイムが始まります。<br>
+
+<b>
+  <em>Mouse Sensitivity（マウス感度）</em> - <br>
+
+</b>カーソルの動きの感度の設定です。</font></font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3">
+<p><b>- NETWORK（ネットワーク）</b></p>
+
+<p><b><i>Connection（接続環境） -<br>
+
+</i></b>マルチプレイをするときの接続の環境です。 (<i>LAN</i>/<i>Internet</i>).<br>
+
+<b><i>Maximum Players（最大プレイヤー数） - </i><br>
+
+</b>自分のサーバに参加できる最大の人数です。<br>
+
+<b><i>Register in Lobby Servers（ロビーサーバに登録） - </i><br>
+
+</b>自分のサーバがロビーサーバに登録され、他のプレイヤーが<i>JOIN GAME（他のゲームへ参加）</i> メニューから検索できるようになります。<b><br>
+
+<i>Game Name（サーバ名） - </i><br>
+
+</b>自分のサーバの名前です。サーバリストにはこの名前が表示されます。<b><br>
+
+<i>Game Password（パスワード） - </i><br>
+
+</b>自分のサーバのパスワードです。パスワードを知っているプレイヤーのみが参加できるようになります。<br>
+
+<i><b>Balance Teams（バランスチーム） -</b></i><br>
+
+サーバに参加するプレイヤーは強制的に人数の少ないチームに参加することになります。<i>CTF</i>と<i>Infiltration</i>のみ有効です。<b><br>
+
+<br>
+
+- VISUALS（ヴィジュアル）</b></p>
+
+<p><b><i>Interface Style（インターフェイス） - </i><br>
+
+</b>ゲーム中のインターフェイスを変更することができます。<i>Interface Style（インターフェイス）</i> では画像、カーソル、ステータスの位置などを変更します。<b><br>
+
+</b><i><b>Player Indicator（プレイヤーの目印） - </b></i><br>
+
+これにチェックがあると自プレイヤーの頭上に小さい矢印が表示されます。<i><b><br>
+
+Sniper Line（スナイパーライン） - </b></i><br>
+
+遠くへ狙いを定めるときの補助としてプレイヤーとカーソルの間に描かれる線です。</p>
+
+<p><b>- BOTS（BOT）</b></p>
+
+<p><b><i>Difficulty（強さ） - <br>
+
+</i></b>BOTの射撃精度、行動に影響します。<i>.<b><br>
+
+Chat（チャット） - <br>
+
+</b></i>チェックがされているとBOTが時々発言するようになります。</p>
+
+<p><b>- SOUND（サウンド）</b></p>
+
+</font>
+</font>
+<p><font face="Courier" size="3"><font face="Courier" size="3"><i><b>Sound Volume（効果音の音量） -<br>
+
+</b>
+</i>効果音の音量（％）です。MP3ミュージックの音量にも影響します。<br>
+
+<i><b>Music Volume（音楽の音量） - </b></i><br>
+
+<i>Game Music（音楽）</i> の音量（％）です。<b><i><br>
+
+Explosion Effect（爆発エフェクト） -</i><br>
+
+</b>プレイヤーの近くで何かが爆発した時に発生する効果です。(数秒間耳が麻痺してキーンと言う音が聞こえます。)<b><i><br>
+
+Distant Battle（遠くの戦闘音） - <br>
+
+</i>
+</b>遠くの戦闘音の有効/無効を設定します。<br>
+
+<i><b>Game Music（音楽） -</b></i><br>
+
+ゲーム中に再生できる標準装備の音楽です。<i><b><br>
+
+MP3 Music（MP3ミュージック） - <br>
+
+</b></i>ゲーム中再生できるMP3ファイルです。Soldatでは手動もしくはWinampのようなMP3プレイヤーで作成できるM3U形式のプレイリストを使用します。<i>SoldatのMP3フォルダ</i> に置いてください。(例. c:\soldat\mp3).<br>
+
+</font></font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3">
+<p><br>
+
+<b>Start Game（ゲームの開始）メニューの設定:<br>
+
+&nbsp;</b></p>
+
+<p><br>
+
+<b> <i>Kill Limit（キルリミット）</i>, <i>Point Limit（ポイントリミット）</i> - </b><br>
+
+プレイヤーの<i>キル数</i>若しくは<i>ポイント</i>がこの数に到達すると1マップが終わります。<i>Teammatch</i>においてはチームのポイントとなります。<b><i><br>
+
+Capture Limit（スコアリミット）</i> -</b> <br>
+
+Capture the Flagにおいては旗の奪取数となります。<b><i><br>
+
+Time Limit（制限時間）</i></b> -<br>
+
+1マップの最大時間（分）です。<br>
+
+<b> <i>Survival Mode</i> -<br>
+
+</b>このモードでは復活がありません。プレイヤーが殺されると最後まで生き残る1人または1チームが決まるまで待たなくてはいけません。決まるとそのラウンドが終わり全員が再び復活します。<b><i><br>
+
+Realistic Mode -<br>
+
+</i></b>このモードは上級者向けです。<br>
+
+- プレイヤーの体力の低下<br>
+
+- 落下によるダメージ<br>
+
+- 自分が向いている方向しか見えない。障害物の向こうの敵プレイヤーは見えない。<br>
+
+- 武器に反動がかかるようになる。発砲後カーソルが上に跳ね上がる<br>
+
+(これを防ぐには一発もしくは数発ずつ撃つとよい)<br>
+
+- ボーナスアイテムは出現しない。<br>
+
+<b><i>Loop（ループ）</i> -</b> <br>
+
+選択したマップを繰り返します。これにチェックがない場合、選択したマップがすべて終わると自動的にゲームも終了されます。<br>
+
+<i><b>Random Bots（ランダムBOT） -</b></i><br>
+
+設定した数のBOTがランダムでゲームに参加します。<br>
+
+チーム戦ではチーム名のとなりから設定してください。</p>
+
+<p>&nbsp;</p>
+
+<p><b>コンフィグの設定(config.exe):</b></p>
+
+<p><br>
+
+<b>
+<br>
+
+- Graphics（グラフィック）</b></p>
+
+<p><b><i>Fullscreen（フルスクリーン）</i> - </b>チェックが入っているとフルスクリーンで起動します。ウィンドウモードにすることで不具合が解決することもあります。<b><br>
+
+<i>Dithering（ディザリング）</i> - </b>16bitで有効です。擬似的に32bitのように見せます。<b><br>
+
+<i>Antialiasing（アンチエイリアス）</i> - </b>画面を滑らかにします。対応するビデオカードのみ有効です。(GeForceなど)<br>
+
+<i><b>Bitrate（ビットレート）</b></i> - 32bitのほうが良いですが、すべてのカードに対応してるわけではありません。（Voodooなど）<br>
+
+<i><b>Refresh Rate（リフレッシュレート）</b></i> - 画面の更新速度です。<br>
+
+<i><b>Video Adapters（ビデオアダプタ）</b></i> - 利用可能なビデオアダプタです。</p>
+
+<p><b>- Sound（サウンド）</b></p>
+
+<p><i><b>Sound Quality（音質）</b></i> - 音質の設定です。<br>
+
+<i><b>Sound Output Type（音声出力タイプ）</b></i> - 利用可能なサウンドデバイスです。<i><b><br>
+
+Sound Driver List（サウンドドライバ）</b></i> - 利用可能なサウンドドライバです。</p>
+
+</font></font>
+<p><font face="Courier" size="3"><font face="Courier" size="3"><b>- Performance（パフォーマンス）</b><br>
+
+<br>
+
+<i><b>Particles on screen（描画の細かさ）</b></i> - 血液、煙、薬莢、埃などの描画の細かさです。<b><i><br>
+
+</i></b>
+<i><b>Bot Seeing Quality（BOT認識精度）</b></i> - BOTの視覚の精度です。ゲームの処理速度に影響します。<br>
+
+<i><b>Render Bullet Trails（弾道の描画）</b></i> - 長い弾道を描画します。<br>
+
+<i><b>Render Weather Effects（天候エフェクトの表示）</b></i> - 雪、砂、雨などを描画します。<br>
+
+<i><b>Render Smooth Polygons（ポリゴンを補間表示する）</b></i> - ポリゴンの端を滑らかに描画します。<br>
+
+<i><b>Show Death Console（キルログの表示）</b></i> - ゲーム画面右上にキルログを表示します。<i><b><br>
+
+File logging（ログをファイルに保存する）</b></i> - ログ記録の有効/無効を切り替えます。(コンソールログ及びキルログ)<br>
+
+<i><b>Auto record- </b></i> ゲーム中の最後の数分間（soldat.iniで設定可能）自動的にゲームを録画します（demos/autodemo.sdmとして録画）。録画はF8を押すことでいつでも保存できます(別のファイルとしてdemos/autodemoX.sdmのように保存)。自動録画中にF8を二回押すと通常のDEMO録画に切り替えられます。<br>
+
+
+<br>
+
+<b>- Network（ネットワーク）</b></font></font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3">
+<p><i><b>Game port（ポート）</b></i> - 自分のサーバに他のプレイヤーが接続するポートです。<i><b><br>
+
+Internet connection speed（回線速度）</b></i> - 自分の回線速度を設定してください。<i><b><br>
+
+Max Ping（最大ping）</b></i> - プレイヤーに許される最大のPing値です。<i><b><br>
+
+Servers greetings message（入室時に表示するメッセージ）</b></i> - 自分のサーバに他のプレイヤーが接続したときに表示されるメッセージです。<br>
+
+<i><b>Never forward clients</b></i> - ポートの開放されたファイアウォールがある場合これをチェックしてください。他のプレイヤーはロビーサーバを通してファイアウォールを乗り越える必要がなくなります。<br>
+
+<i><b>Register server with All-Seeing Eye（All-Seeing Eye(ASE)へサーバ登録する）</b></i> - All-Seeing Eye (<a href="http://www.udpsoft.com">http://www.udpsoft.com</a>)のサーバに登録します。<br>
+
+<i><b>Server Link（サーバリンク）</b></i> - ロビーサーバに表示されるリンクです。サーバを立てている人のホームページかe-mailを入力すると良いでしょう。</p>
+
+<p><b>- More（その他）</b></p>
+
+<p><i><b>Video Compatibility（ビデオカードの互換性を重視する）</b></i> - 緊急時のみ使用してください。<i><b><br>
+
+Force Software（ビデオカードに処理を任せずソフトフェアで処理する）</b></i> - ビデオカードを使わずにゲームを起動します。<br>
+
+<i><b>Blank Screen while bonus fix (old ATI cards)（ボーナス獲得時の黒画面をオフ（ATI cards)</b></i> - <i>Berserker</i>などのアイテムを獲得したときの暗い画面を止めたい時に使用してください。<i><b><br>
+
+Texture Filters（テクスチャフィルタ）</b></i> - 飽きたら変更してみてください。<br>
+
+<i><b>Backbuffer Count（画面バッファ回数）</b></i> - ものすごく飽きたら変更してみてください。<br>
+
+<i><b>Languages（言語） - Change（変更）</b></i> - Soldat内の言語を変更できます。(言語ファイルはSoldat\Txt\Languagesフォルダにあります)</p>
+
+<p>&nbsp;</p>
+
+<p><b>その他の特別な設定はSOLDAT.INIで変更してください。</b></p>
+
+<p><img src="line.png" border="0" height="5" width="640"></p>
+
+<p>&nbsp;</p>
+
+<a name="EKRAN">
+<p><i><b><font size="4">:---===メイン画面: </font> </b></i></p>
+</a>
+<p><b>Soldatの計器表示:</b></p>
+
+<p><br>
+
+<img src="paski.png" border="0" height="64" width="636"><br>
+
+- 画面下部の<b>バー</b>は以下のようになっています:<br>
+
+赤 - <b>体力<br>
+
+</b>黄 - <b>弾薬数</b>または<b>リロード時間<br>
+
+</b>グレー<b> - 発射間隔の時間<br>
+
+</b>緑 - <b>ジェットの量</b><br>
+
+<br>
+
+<br>
+
+- <b>プレイヤーの状態</b> [<i>F2</i>で表示/非表示] は普通<i>ジェット燃料バー</i>の上にあります:<br>
+
+緑の数字: <b>プレイヤーの順位 / 全プレイヤー数</b>. <br>
+
+赤の数字: <b>プレイヤーのキル数/ポイント</b>と<b>トップとの差</b>.<br>
+
+青の数字: ゲーム中の<b>得点の上限</b><br>
+
+ネットワークゲームではラグ計測器も表示されます。<br>
+
+- 点の大きさと色によって表されるPing値</p>
+
+<p><br>
+
+<img src="teamscore.png" border="0" height="88" width="55"><br>
+
+- <i>Teammatch</i>においては右下にチームごとのスコアが表示されます。<br>
+
+<br>
+
+<br>
+
+<img src="flags.png" border="0" height="88" width="56"><br>
+
+- <i>Capture the Flag</i>や<i>Infiltration</i>では右下に旗の獲得数あるいはポイントが表示されます。自陣に旗がない場合は旗に×印の画像が表示されます。<br>
+
+<br>
+
+<img src="line.png" border="0" height="5" width="640"></p>
+
+<p>&nbsp;</p>
+
+</font><font size="3">
+<p><i><b><font face="Courier" size="4"><a name="BRONIE"><font size="4">:---===武器</font></a></font></b></i></p>
+
+</font>
+<font face="Courier" size="3">
+<p>&nbsp;&nbsp;&nbsp;武器を選択するには参加時もしくは復活時に[0-9]キーを押してください。武器を捨てたり他の武器を拾ったりすることもできます。武器は二つもてます。(片方の武器は背中に背負っています).</p>
+
+<p><img src="guns.png" border="0" height="290" width="252"></p>
+
+<p>選択可能な武器:</p>
+
+<p><b>1. Desert Eagles<br>
+
+</b>2丁拳銃！腕を折るほどの反動がある自動拳銃です。そのため連射するのは難しいですが、その弾丸はたやすく厚い甲冑をぶち抜きます。</p>
+
+<p><b>2. HK MP5<br>
+
+</b>世界中で最も有名な短機関銃です。素早く猛烈です。至近距離では重火器をも破ることができるでしょう。</p>
+
+<p><b>3. AK-74</b><br>
+
+1947年からの自動小銃「カラシニコフ」を改良した銃です。テロリストや多くの世界中の軍隊で使われています。過去50年間で最高のライフル銃です。</p>
+
+<p><b>4. Steyr AUG<br>
+
+</b>この武器はおもちゃのようにみえますがまったく違うものです。すさまじい弾速で素早く全てを殺す弾丸を吐き出します。</p>
+
+<p><b>5. Spas-12<br>
+
+</b>この散弾銃は12ゲージの弾丸で大虐殺を引き起こします。近距離では最高の武器です。</p>
+
+<p><b>6. Ruger-77</b><br>
+
+猟銃です。非常に早く正確に打てます。鹿と人間の狩猟にお勧めです。</p>
+
+<p><b>7. M79</b><br>
+
+ベトナム戦争から有名な擲弾発射筒です。べトコンはこの独特な音を聞くとたちまちに潅木へ逃げ込みました。この40mm擲弾によって丘の後ろの人でさえも粉々に砕け散ってしまいます。</p>
+
+<p><b>8. Barret M82A1</b><br>
+
+この狙撃銃はとてつもない力を持っています。これは戦車の装甲を貫通させるために作られました。軍隊もさすがにこれを人間に使用するつもりはありませんでした。しかしそんなこと構うものでしょうか。<br>
+
+伏せかしゃがみの状態で狙撃モードが有効になります。</p>
+
+<p><b>9. M249 (FN Minimi)</b><br>
+
+すばらしい火力を備えた最高の機関銃です。チームの支援に非常に有効でしょう。</p>
+
+<p><b>10. XM214 Minigun</b><br>
+
+  映画プレデターで有名な「無痛銃」です。このバルカン砲は軍用ヘリに搭載されています。この銃には莫大な量の弾薬があり、またその莫大な量の敵兵を殺害することができるでしょう。</p>
+
+</font></font>
+<p><font face="Courier" size="3">&nbsp;</font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">標準装備の武器:<br>
+
+  <br>
+
+  <b>USSOCOM</b><br>
+
+&nbsp;アメリカ特殊部隊で標準的な武器です。復活後は常にサブ武器として装備できます。</font></font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3">
+<p><b>Combat Knife</b><br>
+
+&nbsp;標準的な歩兵用の戦闘ナイフです。この小さな武器の一突きでたちまち敵を仕留めてしまいます。秘密工作に最適です<br>
+
+<i>武器投げボタン</i>を押すことにより飛び道具としても使用可能です。</p>
+
+<p><b>Chainsaw</b><br>
+
+&nbsp;大量の木を切るのに使われるチェーンソーです。違う使い方を見つけたらみんなに知らせてあげてください。</p>
+
+<p><b>M72 LAW&nbsp;<br>
+
+&nbsp;</b>爆発するミサイルを搭載した対戦車用武器です。しゃがみの体制でのみ使えます。</p>
+
+<p><b>Fists（こぶし）</b><br>
+
+&nbsp;武器を捨てるとロッキーを演じることができます。</p>
+
+<p><b>Grenade(手榴弾)</b><br>
+
+&nbsp;すぐに殺すことはできませんがダメージを与え一度に多くの敵を殺すのに有効です。<br>
+
+&nbsp;スタート時と緑色の箱を拾ったときに手榴弾を得ることが出来ます。</p>
+
+<p><br>
+
+特殊武器:</p>
+
+<p><b>Rambo Bow（ランボーの弓）<br>
+
+</b>&nbsp;<i>Rambomatch</i>で使用可能な有名なJohn Ramboの弓です。隠密作戦に最適です。静かに稲妻のように素早く死をもたらします。<i>武器切り替えキー</i>で爆発する弓に変更することもできます。</p>
+
+<p><b>Flamethrower（火炎放射器）<br>
+
+</b>&nbsp;他のプレイヤーに火をつけるのに使われます。<i>Flame God</i>のボーナスアイテムをとった時のみ使用可能です。</p>
+
+<p>&nbsp;</p>
+
+</font>
+</font>
+<p><font face="Courier" size="3"><font face="Courier" size="3">武器の設定は<em>weapons.ini</em>を編集することで変更可能です。 </font></font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3">
+<p><img src="line.png" border="0" height="5" width="640"></p>
+
+<p>&nbsp;</p>
+
+
+</font>
+<font size="3">
+<p><i><b>
+<font face="Courier" size="4"><a name="BONUSY"><font size="4">:---===ボーナスアイテム</font></a></font></b></i></p>
+
+</font>
+<font face="Courier" size="3">
+</font></font>
+<p><font face="Courier" size="3"><font face="Courier" size="3"><font size="4"><i>&nbsp;</i>&nbsp;&nbsp; 時々発生するいくつかのボーナスを拾うことが出来ます:<br>
+
+&nbsp;</font></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">&nbsp;<b><img src="medikit.png" border="0" height="16" width="16"> Medikit（医療箱）</b></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">体力を最大値まで回復します。</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">&nbsp;<img src="grenadekit.png" border="0" height="16" width="16"> <b>
+Grenades（手榴弾）</b></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">設定した最大値(1-5)まで手榴弾を手に入れることができます。</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">&nbsp;<img src="clusterkit.png" border="0" height="16" width="16"> <b>Cluster 
+grenades（手榴弾パック）</b></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">地面にぶつかると分裂する3つの手榴弾です。投げた後は破壊的な爆発を引き起こします。</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><b>&nbsp;<img src="vestkit.png" border="0" height="16" width="16"> 
+Bulletproof vest（防弾チョッキ）</b></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">簡単になくなってしまいますがプレイヤーの命を救うでしょう。</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">&nbsp;<img src="flamerkit.png" border="0" height="16" width="16"> <b>Flame 
+God（炎の神）</b></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">持続時間: 10 秒</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">不死身の火の神になります！敵を焼き尽くす火炎放射器が手に入ります。好きなだけ燃やして逃げ惑う敵を笑ってください。<br>
+
+<br>
+
+&nbsp;<img src="berserkerkit.png" border="0" height="16" width="16"> <b>
+Berserker（狂戦士化）</b></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">持続時間: 15 秒</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">この一言です: 皆殺し! Berserkerモードでは4倍の攻撃力となります。敵をほんの2,3発で粉砕してください！</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">&nbsp;<img src="predatorkit.png" border="0" height="16" width="16"> <b>
+Predator（透明化）</b></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">持続時間: 25 seconds</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><font color="black"><span class="spnMessageText" id="msg">孤独な狩人となってください！Predatorモードでは他人から見えなくなります。また、だれにもその銃声は聞こえなくなりますが、ジェットを使いすぎたり発砲しすぎたりするとただの幽霊となってしまい簡単に倒されてしまうでしょう！怪我をしていると敵に血が見えてしまうことも覚えて置いてください。さあCTFで敵の旗を盗んでみましょう！</span></font></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><img src="line.png" border="0" height="5" width="640"></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">&nbsp;</font></font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3"><a name="KOMENDY">
+<p><i><b><font size="4">:---===コマンド: </font> </b></i></p>
+</a>
+</font></font>
+<p><font face="Courier" size="3"><font face="Courier" size="3"><b>"/"キーを押した後に以下のコマンドを入力できます:</b></font></font></p>
+
+
+<table style="border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0" height="592" width="100%">
+
+  <tbody>
+    <tr>
+
+    <td colspan="2" height="16">
+
+      <p align="center">
+      <font face="Courier" size="3">
+
+      <i>プレイヤー用コマンド:</i></font></p>
+      </td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%">
+
+      <font face="Courier" size="3">
+    <b>KILL</b></font></td>
+
+    <td height="16" width="60%">
+
+      <font face="Courier" size="3">
+    切腹</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%">
+
+      <font face="Courier" size="3">
+    <b>BRUTALKILL</b></font></td>
+
+    <td height="16" width="60%">
+
+      <font face="Courier" size="3">
+
+華麗な切腹</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%">
+
+      <b>SMOKE</b></td>
+
+    <td height="16" width="60%">
+
+      <font face="Courier" size="3">
+
+葉巻に火をつけ吸った後捨てる</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%">
+
+      <font face="Courier" size="3">
+
+      <b>TABAC</b></font></td>
+
+    <td height="16" width="60%">
+
+      <font face="Courier" size="3">
+
+煙草をかむ</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%">
+
+      <font face="Courier" size="3">
+
+      <b>TAKEOFF</b></font></td>
+
+    <td height="16" width="60%">
+
+      <font face="Courier" size="3">
+
+帽子を脱ぐ</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%">
+
+      <b>VICTORY</b></td>
+
+    <td height="16" width="60%">
+
+歓声をあげる</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%">
+
+      <font face="Courier" size="3">
+    <b>PAUSE</b></font></td>
+
+    <td height="16" width="60%">
+
+      <font face="Courier" size="3">
+
+ゲームの一時停止</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2" align="center" height="17">
+
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2" align="center" height="17">
+
+      <i>サーバ用コマンド:</i></td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%">
+
+      <font face="Courier" size="3">
+    <b>ADDBOT <i>bot name</i></b></font></td>
+
+    <td height="16" width="60%">
+
+      <font face="Courier" size="3">
+
+BOTの追加</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%">
+
+      <font face="Courier" size="3">
+    <b>KICK <i>player name or player number</i></b></font></td>
+
+    <td height="16" width="60%">
+
+      <font face="Courier" size="3">
+
+プレイヤー/BOTをゲームから追い出す</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%"> 
+      <font face="Courier" size="3">
+
+      <b>BAN <i>player name or player number</i></b></font></td>
+
+    <td height="16" width="60%">
+
+      <font face="Courier" size="3">
+
+プレイヤーの接続を禁止して二度と参加できなくする</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%"> <b>BANIP <i>ip number</i></b></td>
+
+    <td height="16" width="60%">
+
+<i>ip number</i>からの接続の禁止</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%">
+
+      <b>UNBAN </b>
+      <font face="Courier" size="3">
+      <b><i>ip number</i></b></font></td>
+
+    <td height="16" width="60%">
+
+<i>ip number</i>のBAN状態の解除</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%"> <b>MAP <i>map name</i></b></td>
+
+    <td height="16" width="60%">
+
+      <font face="Courier" size="3">
+
+マップの変更</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%">
+
+      <b>RESTART</b></td>
+
+    <td height="16" width="60%">
+
+      <font face="Courier" size="3">
+
+現在のゲームの再スタート</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%">
+
+      <font face="Courier" size="3">
+
+      <b>NEXTMAP</b></font></td>
+
+    <td height="16" width="60%">
+
+      <font face="Courier" size="3">
+
+次のマップへの変更</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%">
+
+      <b>ADM </b>
+
+      <font face="Courier" size="3">
+    <b> <i>players name</i></b></font></td>
+
+    <td height="16" width="60%">
+
+プレイヤーをRemote Admins listに追加</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="16" width="40%">
+
+      <b>ADMIP </b>
+      <font face="Courier" size="3">
+      <b><i>IP number</i></b></font></td>
+
+    <td height="16" width="60%">
+
+      <font face="Courier" size="3">
+<i>IP number</i>をRemote Admins listに追加</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <b>UNADM </b>
+      <font face="Courier" size="3">
+      <b><i>IP number</i></b></font></td>
+
+    <td height="8" width="60%">
+
+<i>IP number</i>をRemote Admins listから除外</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <font face="Courier" size="3">
+      <b>KICKLAST</b></font></td>
+
+    <td height="8" width="60%">
+
+最後にゲームに参加したプレイヤーを追い出す</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <font face="Courier" size="3">
+      <b>RESPAWNTIME<i> seconds</i></b></font></td>
+
+    <td height="8" width="60%">
+
+respawn time（復活時間）の変更</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <font face="Courier" size="3">
+      <b>MAXRESPAWNTIME<i> seconds</i></b></font></td>
+
+    <td height="8" width="60%">
+
+maximum respawn time（チーム戦における復活時間）の変更</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <font face="Courier" size="3">
+      <b>LIMIT<i> number</i></b></font></td>
+
+    <td height="8" width="60%">
+
+kill/point/capture limit（キル/ポイント/スコアリミット）の変更</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <font face="Courier" size="3">
+      <b>TIMELIMIT<i> minutes</i></b></font></td>
+
+    <td height="8" width="60%">
+
+time limit（制限時間）の変更</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <font face="Courier" size="3">
+      <b>PASSWORD<i> text</i></b></font></td>
+
+    <td height="8" width="60%">
+
+パスワードの変更(一時的)</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <font face="Courier" size="3">
+      <b>SETTEAMx<i> player number</i></b></font></td>
+
+    <td height="8" width="60%">
+
+xチームにプレイヤーを移動</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <b>ADDBOTx</b><font face="Courier" size="3"><b><i> bots name</i></b></font></td>
+
+    <td height="8" width="60%">
+
+xチームにBOTを追加</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <b>FRIENDLYFIRE <i>0/1</i></b></td>
+
+    <td height="8" width="60%">
+
+friendly fire（味方への攻撃）の有効/無効</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <b>VOTE%<i> 0-100</i></b></td>
+
+    <td height="8" width="60%">
+
+投票有効率の変更</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <b>BONUS <i>0-5</i></b></td>
+
+    <td height="8" width="60%">
+
+bonuses frequency（ボーナス出現間隔）の変更 0-なし, 5-頻繁</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8"><strong>MAXPLAYERS <em>1-32 </em></strong></td>
+
+    <td height="8"><font face="Courier" size="3">サーバに接続できる最大人数の設定</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8"><strong>LOADCON</strong></td>
+
+    <td height="8">soldat.iniのサーバ設定の読み込み</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8"><strong>LOADLIST <em>xxx </em></strong></td>
+
+    <td height="8">xxx.txtからマップリストを読み込む </td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8"><strong>LOADWEP <em>xxx</em> </strong></td>
+
+    <td height="8">xxx.iniから武器設定を読み込む</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8"><strong>GAMEMODE <em>0-6 </em></strong></td>
+
+    <td height="8">ゲームモードの変更(0 DM, 1 PM, 2 TM, 3 CTF, 4 RM, 5 INF, 6 HTF)</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8"><b>REALISTIC <i>0/1</i></b></td>
+
+    <td height="8">realistic modeへの切り替え</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8"><b>ADVANCE <i>0/1</i></b></td>
+
+    <td height="8">advance modeへの切り替え</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8"><b>SURVIVAL <i>0/1</i></b></td>
+
+    <td height="8">survival modeへの切り替え</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8"><strong>KILL <font face="Courier" size="3"><b><i>players name or players number</i></b></font></strong></td>
+
+    <td height="8">プレイヤーの殺害</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8"><strong>BANLAST</strong></td>
+
+    <td height="8">/kicklastと同じように最後にゲームに参加したプレイヤーからの接続を1時間禁止する</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8"><strong>UNBANLAST</strong></td>
+
+    <td height="8">最後に接続を禁止されたプレイヤーのBAN状態を解除する</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8"><strong>LOBBY</strong></td>
+
+    <td height="8">ロビーサーバへの登録</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <font face="Courier" size="3">
+      <b>SAY<i> text</i></b></font></td>
+
+    <td height="8" width="60%">
+
+      <font face="Courier" size="3">
+
+サーバ上の全プレイヤーへのメッセージの送信</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2" height="15">
+
+      <p align="center"></p>
+      </td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2" height="1">
+
+      <p align="center">
+      <font face="Courier" size="3">
+      <i>プレイヤーのサーバ用コマンド:</i></font></p>
+      </td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <font face="Courier" size="3">
+      <b>ADMINLOG<i> password</i></b></font></td>
+
+    <td height="8" width="60%">
+
+      <font face="Courier" size="3">
+サーバの管理者として接続する</font></td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8"><strong>INFO</strong></td>
+
+    <td height="8">サーバ情報の受信</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8"><strong><font face="Courier" size="3"><b>MUTE <i>players name or players number</i></b></font></strong></td>
+
+    <td height="8">特定のプレイヤーの発言を見えなくする</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8"><font face="Courier" size="3"><b>UNMUTE <i>players name or players number</i></b></font></td>
+
+    <td height="8">mute状態を解除する</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <font face="Courier" size="3">
+      <b>RECORD<i> </i></b></font><b><i>name</i></b></td>
+
+    <td height="8" width="60%">
+
+Soldat\Demosフォルダに保存されるデモの録画</td>
+
+  </tr>
+
+  <tr>
+
+    <td height="8" width="40%">
+
+      <b>STOP</b></td>
+
+    <td height="8" width="60%">
+
+録画の停止</td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2" height="4">
+
+    </td>
+
+  </tr>
+
+  </tbody>
+</table>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">&nbsp;</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><b>パラメーター用コマンド:</b></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">以下はSoldat.exeを実行する際に使用できます:<br>
+
+<br>
+
+- Soldat.exe <b>-dedicated</b> (dedicatedサーバとして起動)<br>
+
+<br>
+
+- Soldat.exe <b>-start</b> (メニューを表示させずすぐにゲームを起動)<br>
+
+<br>
+
+- Soldat.exe <b>-dedicated -start</b> (すぐにdedicatedサーバとして起動)<br>
+
+<br>
+
+- Soldat.exe <b>-join <i>IPnumber (port</i></b> <b><i>password</i></b>)<br>
+
+(ゲームを起動し入力した<i>
+IPアドレス</i>へ接続、<i>ポート</i>、<i>パスワード</i>は任意; <br>
+
+例:<br>
+
+Soldat.exe -join 62.93.201.70<br>
+
+Soldat.exe -join 127.0.0.1 23073 tikikaka)<br>
+
+<br>
+
+- Soldat.exe <b>-demo <i>name (freecam</i></b> <b><i>speed</i></b> <b><i>notexts</i></b>
+<b><i>extract)<br>
+
+</i></b>(ゲームを起動し指定したDEMOを再生、以下は任意: <br>
+
+<i>freecam</i> (0/1) - 自由に視点を移動できる (デフォルトは0)<br>
+
+<i>speed</i> (0-...%)- 再生する速度(デフォルトは100%)<br>
+
+<i>notexts</i> (0/1) - テキスト、メニュー、カーソルを再生中は表示しない(デフォルトは0)<br>
+
+<i>extract</i> (0/1) - DEMOからBMPファイルを作成 (デフォルト0)。 "Bmp2Avi"などのソフトを使って後でAVIファイルを作成するときに有効。
+
+音は"Total Recorder"などのソフトを利用すると抽出可能。このオプションは時間がかかり処理が非常に遅くなるためお勧めしない。再生速度を低くする(50%など)と良い結果になる。<br>
+
+例:<br>
+
+Soldat.exe -demo demo12<br>
+
+Soldat.exe -demo demo19 1 200 1 0<br>
+
+)</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">- Soldat.exe <b>-mod</b> xxx (<em>Soldat\Mods\xxx</em>にあるMODでSoldatを起動)</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><br>
+
+<img src="line.png" border="0" height="5" width="640"></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">&nbsp;</font></font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3"><a name="CHAT">
+<p><i><b><font size="4">:---===チャット: </font> </b></i></p>
+</a>
+</font></font>
+<p><font face="Courier" size="3"><font face="Courier" size="3">&nbsp;&nbsp;&nbsp; チャット機能を利用するためのデフォルトキーは<i>T </i>(チームチャットは<i>Y</i>)で、入力後<i>ENTER</i>を押すと発言できます。 </font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><b>Taunts</b> - TAUNTS.TXT(SoldatフォルダもしくはProfilesフォルダに置かれます)で設定した文を
+<i>ALT</i>+アルファベット・数字キーを押すことですぐに発言することが出来ます 。</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><b>Teamchat</b> - チーム内だけに発言したい場合は"^"を文の前に入力します。例: ^Whats up!</font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><img src="line.png" border="0" height="5" width="640"></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3">&nbsp;</font></font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3"><font size="3">
+<p><i><b><font face="Courier" size="4"><a name="DEDYK"><font size="4">
+:---===DEDICATEDサーバ</font></a></font></b></i></p>
+
+
+</font>
+<font face="Courier" size="4">
+<p>&nbsp;&nbsp;&nbsp; dedicatedサーバはプレイヤーとして参加せず専用の快適なSoldatサーバを建てるときに使います。<br>
+
+これには二つの方法があります:<br>
+
+1. <i>SOLDAT.INI</i>から<i>NETWORK</i>の欄の<i>Dedicated=0</i>を探し<i>Dedicated=1</i>に変更してください。</p>
+<p>2. -dedicated (Soldat.exe -dedicated)パラメーターで起動してください。スタートメニューのショートカットを使うことも出来ます。 <br><br>
+
+&nbsp;自動的にサーバを起動するには以下のようにしてください:<br>
+
+&nbsp;- Soldatを普通に起動しメニューからオプション(ゲームモード、制限時間、マップリストなど)を設定します。<br>
+
+&nbsp;- 終了すると設定が保存されます。<br>
+
+&nbsp;- -dedicated -startパラメータを使ってSoldatを起動してください。</p>
+
+
+<p><b>Remote管理</b></p>
+
+<p>プレイヤーがサーバ外から操作できるようになります。このためにはプレイヤーをRemote Admins listに追加してください。<br>
+
+このコマンドは以下で説明しています
+<a href="#KOMENDY">
+<font face="Courier">
+コマンド</font></a><font face="Courier" size="4">.</font></p>
+
+
+</font><font face="Courier" size="4">
+
+<p><b>ポート</b></p>
+
+
+</font>
+<font face="Courier" size="3">
+
+<p>重要! - ファイアウォールがある場合はUDPのポート（デフォルトは23073、変更可)を開放しなければいけません。あなたのサーバに接続するプレイヤーはデフォルトで23083を使用します。(変更不可)<br>
+ポートを開かないでも接続できるようになるオプションもありますがロビーサーバを通さない場合は出来ません。</p>
+
+</font>
+</font></font>
+<p><font face="Courier" size="3"><font face="Courier" size="3"><font face="Courier" size="3">Soldatサーバは以下のポートを開放する必要があります:<br>
+
+  UDP: ゲームポート (デフォルト 23073)<br>
+
+  TCP/IP: 管理ポート = ゲームポート (デフォルト 23073)<br>
+
+  TCP/IP: ファイルポート = ゲームポート + 10 (デフォルト 23083) <br>
+
+</font><br>
+
+<img src="line.png" border="0" height="5" width="640"></font></font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3"><font face="Courier" size="3"><font size="3">
+<p>&nbsp;</p>
+
+
+</font>
+
+</font><font size="3">
+<p><i><b><font face="Courier" size="4">
+<a name="CHEAT"><font size="4">:---===チート対策</font></a></font></b></i></p>
+
+</font><font face="Courier" size="3">
+<font size="4">
+<p><font face="Courier">Soldatのチート対策は以下の要素に基づいています</font></p>
+
+
+<p><font face="Courier">&nbsp;ソフトウェア会社の手掛けるマルチプレイヤーゲームには何十万ドル、何百時間という膨大な量をつぎ込んでおり、何千人という人が完璧なチート対策システムを開発するために無駄な労力を使っています。このようなシステムはあるちょっとしたことを忘れているため意味がありません。Soldatの作者は4秒でアイデアを思いつきました。Sierraや他のオンライン業界の大手企業はそのことを思いつかず苦労しています。そのSoldatにおけるチート対策は簡単なものです
+:</font></p>
+
+
+<p><font face="Courier">I. <br>
+
+&nbsp;要望: <b>"Soldatでチートはしないでください"</b>.</font></p>
+
+
+<p>どういうわけか効き目がないなら以下の文を読んでください:</p>
+
+
+<p><font face="Courier">II.&nbsp;&nbsp;&nbsp; <br>
+
+&nbsp; このSoldatのチート対策によりSoldatの起動中はこのようなハッキングツールが使用できません: メモリビューア、トレーナー、パケットエディタ、バイナリエディタ、ディスアセンブラ。Soldatの起動中は他のプログラムをすべて終了させることを<strong>強く推奨します。</strong>ハックツールの使用もSoldatをプレイできないほどのレベルまで動作を悪化させてしまいます。<br>
+
+</font>実行ファイルもしくはその関連のファイルを編集してシェアウェア保護を破壊する行為はシステムの不安定化及びネットワークの問題を引き起こします。<font face="Courier"><br>
+万が一なにも違法なことをしていないのにこのようなことが発生してしまったら作者に連絡してください。</font></p>
+
+
+<p><font face="Courier">&nbsp;Soldatはある一人の男が作った小さなシェアウェアであるということを忘れないでください。このゲームの保護を破壊しようとすれば自分が苦しむことになるでしょう。お金も得られないのにチート対策システムの開発に負担がかかりすぎていたら、私はいつでもこのゲームの開発をやめることができるのです。チートやらなんやらがしたいならEAGamesのようなチート対策で名声を獲得している大きい会社を狙ったほうが自分がすごいということをしらしめることができるでしょう。Soldatは放っておいてください。</font></p>
+
+
+</font>
+<p><img src="line.png" border="0" height="5" width="640"></p>
+
+<p>&nbsp;</p>
+
+<a name="HISTORIA">
+<p><i><b><font size="4">:---===開発履歴: </font> </b></i> </p>
+</a>
+</font>
+</font></font>
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><b>Current version:</b></font></font></font></p>
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><strong>1.4 (14.02.2007) </strong></font></font></p>
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><b>Previous public versions:</b></font></font></font></p>
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><strong>1.3.1 (09.12.2005) <br>
+
+  </strong>- Added join spectator team button in team select menu<br>
+
+  - Added new maps: DesertWind, htf_Rubik, ctf_Maya2, ctf_Lanubya (winner of ESL mapping contest) (by grand_diablo),<br>
+
+Blox, ctf_Snakebite, ctf_Ash (by chakapoko maker), htf_Dusk (by Michal), htf_Muygen (by The Geologist),<br>
+
+remakes: ctf_Death2 (by grand_diablo, NuZZ and MM), ctf_Dropdown2 (by Boxo, wp's by Keron Cyst)<br>
+
+- Added new secret ownage command<br>
+
+- Added file readonly.txt to prevent downloading certain files (original maps and sceneries cannot be downloaded)<br>
+
+- Added new anti-cheat solutions<br>
+
+- Added new command: /loadlist X (loads maplist from file X.txt); <br>
+
+- Added new command: /lobby (reregisters the server in the lobby server)<br>
+
+- Added log files split after reaching 512KB of size<br>
+
+- Added png and jpg files are supported by the file download system<br>
+
+- Modified default gostek graphics changed to EVO Gostek (by Michal)<br>
+
+- Modified fixes in maps: ctf_Equinox, ctf_Voland, ctf_B2b + all maps recompiled with PolyWorks<br>
+
+- Modified weapon balance (check weapons.ini for details)<br>
+
+- Modified all maps can be changed or voted in the in-game map change menu<br>
+
+- Modified all weapons must be reloaded after pick-up (prevents reload exploits)<br>
+
+- Modified can't vote until 2 minutes pass after server join<br>
+
+- Modified grenades don't explode on corpses (prevents lag bugs)<br>
+
+- Modified if texture can't be downloaded for map default one is loaded<br>
+- Modified all weapons bullets (except Barret, M79 and LAW) lose power
+after long distance (1 or more screens, to prevent blind spraying)<br>
+
+- Modified weapon can't be reloaded if is fully loaded<br>
+
+- Modified Barret has more movement speed aim penalty and has short wait time before firing<br>
+
+- Modified M79 gives 30% more self damage<br>
+
+- Modified knife throwing - speed of knife depends on how long you hold the throw button<br>
+
+- Fixed extreme bink on respawn<br>
+
+- Fixed lobby registering errors in non-dedicated server game<br>
+
+- Fixed yellow player name still after thrown away flag<br>
+
+- Fixed flame whizz sound<br>
+
+- Fixed players using the same file for headgear<br>
+
+- Fixed Spas-12 reload exploit<br>
+
+- Fixed grenade not exploding in close hit<br>
+
+- Fixed invisible LAW bug<br>
+
+- Fixed Soldat not compatible with some background programs<br>
+
+- Fixed blue team caps worth 20 instead of 25 points<br>
+
+- Fixed mp5 clip falling out<br>
+
+- Fixed killing through wall<br>
+
+- Fixed flames hit colliders<br>
+
+- Fixed various game and manual typing mistakes<br>
+
+- Fixed when player joined paused game his game wasn't paused<br>
+
+- Fixed server does not send messages to non-authenticated admin clients<br>
+
+- Fixed two grenades being thrown on server when player had a chainsaw<br>
+
+- Fixed autorecording start on map change</font></font></p>
+
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><strong>1.3 (05.08.2005) <br>
+
+  </strong>- Added new gamemode: Hold the Flag<br>
+
+  - Added new maps: htf_Mare (by Demonic/Legend), Daybreak, inf_Moonshine (by chakapoko maker), htf_Void (by MM),<br>
+
+ctf_Nuubia (by Troskal) htf_Boxed, htf_Futura, htf_Nuclear (by grand_diablo), htf_Arch (by Sticky)<br>
+
+htf_Desert (by DeMonIc), Airpirates (by Ville) <br>
+
+- Added possibility to throw away flag (press jump + crouch buttons at once, default W + S)<br>
+
+- Added dodge move - pressing the jets button while jumping backwards makes the player do a back-flip<br>
+
+- Added flames from flamer stick to victim and make him die slowly in pain, flames can stick to other people<br>
+
+- Added team player names appear on screen borders (F2 key turns this on/off)<br>
+
+- Added bullet statistics after kill (distance of shot, airtime and number of ricochets)<br>
+
+- Added add, delete to favourite servers list buttons. List holds now server names, IPs, ports and passwords.<br>
+
+- Added reason and voter displayed on map or kick vote<br>
+
+- Added when playing on a weapons mod server all weapon statistics are shown in weapons menu<br>
+
+- Added when selecting weapons little help messages appear (for new players, dissappears after few runs of game)<br>
+
+- Added autocomplete button (Tab), when you type the beginning of someones name and hit Tab it will auto complete<br>
+
+- Added more chat text can be typed and shown (long texts are scaled so they fit screen)<br>
+
+- Added spectator can use free cam by pressing jump button (default W button)<br>
+
+- Added names appear next to players when in spectator mode<br>
+
+- Added menu option to specify amount of kills/deaths to win/lose weapon in advance mode<br>
+
+- Added selection of No weapon for secondary<br>
+
+- Added penalty time in Infiltration and HTF when teams are uneven <br>
+
+(points are added every 5 seconds + 2 seconds for every uneven team member)<br>
+
+- Added penalty for capture points in Infiltration when teams are uneven <br>
+
+(30 points for capture - 5 points for every red team member more)<br>
+
+- Added full weapons modifications (edited in a file 'weapons.ini'),<br>
+
+servers with weapons mods have a prefix '(WM)' in their name<br>
+
+- Added Infiltration and HTF options in soldat.ini -<br>
+
+Blue_Points_Time (time for blue team to get point in seconds); Red_Points_Capture (amount of points for capture);<br>
+
+HTF_Points_Time (time to get point in seconds) <br>
+
+- Added soldat.ini options Max_Flood_Warnings, Max_Ping_Warnings, (warnings until kick),<br>
+
+MaxConnections (max file server connections, tweak this if server crashes on map download)<br>
+
+Disable_AntiCheat_Kick (basicly disables anti-cheat), TooMuch_Packets_*, Flooding_Packets_* <br>
+
+(specifies amount of packets from client when flooding occurs)<br>
+
+- Added soldat.ini options for setting packet send rate T1_*, works when connection type is set to T1 (Internet_Connection=3)<br>
+
+example: T1_Snapshot=40, sends this packet every 40 ticks (60 ticks = 1 second).<br>
+
+- Added KillConsole_Length and MainConsoleLength value to soldat.ini<br>
+- Added running Soldat mods through "-mod" parameter ex. "Soldat.exe
+-mod HarryPotter" - loads all graphics, sounds and txt files<br>
+
+from folders in Soldat\Mods\HarryPotter<br>
+
+- Added file "Soldat\Txt\font.ini", allows to change in-game font (useful for mods and translations)<br>
+
+- Added flame animations are now in different files than explosion (for mod-makers)<br>
+
+- Added files "m2-2.bmp" and "bow-2.bmp" so these weapons don't have to be symmetrical (for mod-makers)<br>
+
+- Added client command "/info" - displays info from server about address, timelimit, nextmap etc.<br>
+
+- Added command "/loadwep" for reloading 'weapons.ini', useful for tweaking settings<br>
+
+- Added /loadwep command works with other files eg. /loadwep weapons121 (loads weapons121.ini settings)<br>
+
+- Added command "/loadcon" for reloading the config file (soldat.ini) while in-game, useful for tweaking network settings<br>
+
+- Added command "/gamemode X" for changing gamemodes (X = 0 DM, 1 PM, 2 TM, 3 CTF, 4 RM, 5 INF, 6, HTF)<br>
+
+- Added commands: "/advance 0-1", "/realistic 0-1", "/survival 0-1", for changing server game settings (eg. /realistic 1)<br>
+
+- Added command "/unbanlast" unbans last vote/server/admin ban<br>
+
+- Added command "/banlast" (similar to /kicklast, bans the last person that entered the server, ban works for 1 hour)<br>
+
+- Added command "/kill X" (X can be player's number or name) (of course this is an admin command)<br>
+
+- Added packet send rate adjusting depending on number of players (smoother play with few players, less bandwidth cost for lots<br>
+
+of players, can be turned off in soldat.ini 'PacketRate_Adjusting=0')<br>
+
+- Added working pause for server and players<br>
+
+- Added if player which is being voted on leaves the game then he gets temporarily banned<br>
+
+- Added different files of gostek for second team (for mods, possibility of two different looking teams)<br>
+
+- Added different files for weapon muzzle fires (for mods)<br>
+
+- Added F8 button for fast forwarding demo playing<br>
+
+- Added new anti-cheat detection methods<br>
+
+- Added self-bink on auto weapons - gun becomes innacurate while auto-firing<br>
+
+- Modified all weapons rebalanced<br>
+
+- Modified weapons: shotgun has more kickback, less horizontal boost for minigun<br>
+
+- Modified LAW has startup time, hold fire for about 0.3 seconds to fire<br>
+
+- Modified bodies preserve velocity after death<br>
+
+- Modified survival mode round ends when everybody on team is killed in CTF and capture point is added for winners<br>
+
+- Modified in survival mode all players and flags respawn after round end<br>
+
+- Modified player joining a survival mode game is dead until end of round<br>
+
+- Modified flame god mode time is shorter (10 seconds) and works on all gamemodes<br>
+
+- Modified flamer is not lost after flame god mode, can be thrown away after but dissapears<br>
+
+- Modified increased radius of pick up (flags, boxes, weapons) slightly<br>
+
+- Modified cursor gets bigger when bink effect occurs (eg. when hit by bullet holding Barret)<br>
+
+- Modified when calling a vote you need to type the reason for the vote<br>
+
+- Modified can't call a vote for 2 minutes after previous vote<br>
+- Modified chat taunts are automaticly sent after pressing Alt+key,
+after pressing the chat button they can be selected the old way<br>
+
+- Modified mp3 music volume is independent from sound volume (Music volume option works for mp3)<br>
+
+- Modified console is more transparent when weapons and team menu show up<br>
+
+- Modified disabled "/adminpass" command in dedicated server, for security reasons<br>
+
+- Modified "mapslist.txt" is reloaded every map change<br>
+
+- Modified flags are dropped not respawned after player disconnect<br>
+
+- Modified ricochet angle is slightly larger<br>
+
+- Modified rambomatch: players can't kill each other if someone is rambo<br>
+
+- Modified bullet hit damage ratio for head, 5% less damage (current ratios: legs 90%, torso 100%, head 115%)<br>
+
+- Modified network bullet start position according to player ping and bullet owners ping<br>
+
+- Modified spectator cam is faster<br>
+
+- Modified flood kick ban is 20 minutes now<br>
+
+- Modified capture points for player = 20 points<br>
+
+- Modified game admins cannot be kicked<br>
+
+- Modified server is automaticly unpaused if all players disconnect<br>
+
+- Modified idle kick time lowered to 3 minutes<br>
+
+- Modified "/setteam5" works on all game modes<br>
+
+- Modified automatic ping sort works only after whole list is downloaded or cancel pressed<br>
+
+- Modifed or fixed maps Arena2, ctf_B2b, ctf_Viet<br>
+
+- Fixed grenade selfkilling<br>
+
+- Fixed chainsaw collision so it is possible to massacre bodies<br>
+
+- Fixed not being able to chat on map change<br>
+
+- Fixed time does not flow if game is paused<br>
+
+- Fixed mp3 playing when list loops<br>
+
+- Fixed Advance mode cheat allowing to pick a disabled weapon with the keyboard<br>
+
+- Fixed server host bullet hit boost effect<br>
+
+- Fixed LAW exploit (dropped LAW must be reloaded)<br>
+
+- Fixed alt+F4 doesn't make a screenshot<br>
+
+- Fixed server-client time synchronization<br>
+
+- Fixed friendly fire for clients (team players don't bleed if it is off)<br>
+
+- Fixed if holding two weapons of the same kind - losing both when throwing one away<br>
+
+- Fixed bug when dead guys bullet didn't do any damage<br>
+
+- Fixed kills console fades when showing players menu<br>
+
+- Fixed M79 wall bug<br>
+
+- Fixed fast shot piercing wall bug<br>
+
+- Fixed causes of weapon jamming after reload<br>
+
+- Fixed causes of mute bug<br>
+
+- Fixed causes of invisible bullets in multiplayer<br>
+
+- Fixed wave respawn in dedicated server (if there are few players it takes less seconds to respawn)<br>
+
+- Fixed "biodro.bmp", "biodro2.bmp" and "reka.bmp"<br>
+
+- Fixed player does not join same team if chosen from change team menu (can be used for canceling the menu)<br>
+
+- Fixed paused server can be joined<br>
+
+- Fixed modified animations bug<br>
+
+- Fixed no respawn time showing after changing team from spectator<br>
+
+- Fixed changing video mode when joining server with wrong password<br>
+
+- Fixed soldat.ini value "Record_Time=", time in minutes of the autodemo rerecording<br>
+
+- Fixed all filelogs are now updated every minute only (can be specified in soldat.ini "LogFilesUpdate=")<br>
+
+- Fixed realistic mode visibility point, so players with head in ceiling are visible</font></font></p>
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><strong>1.2.1 (26.10.2004) <br>
+
+</strong> Added Auto map downloading from server<br>
+
+Added Bullet and missile ricochets<br>
+
+Added New Advance Mode<br>
+
+Added Bullet time effect<br>
+
+Added Auto recording feature<br>
+
+Added Mute player option (commands: /mute, /unmute)<br>
+
+Added Option to take screenshot on final score<br>
+
+Added Bots aim better with Barret and Ruger on Impossible level<br>
+
+Added Weapons aim is affected by bullet hits (the bink effect)<br>
+
+Added Aim is affected more by player speed<br>
+
+Added In CTF health and grenade boxes spawn on players team side, player can pick up enemy boxes and "steal" them on his side<br>
+
+Added Players get kicked from server after 5 minute idle time<br>
+
+Added Console messages are transparent after pressing F1<br>
+
+Added Option to disable sniper line server-side in soldat.ini<br>
+
+Added New map anti-hack system<br>
+
+Added New voting system with menu for selecting "yes" or "no"<br>
+
+Added Server makes an automatic kick vote if cheating is detected to prevent unfortunate bans<br>
+
+Added Weapon muzzle collision detection with polygons and colliders to prevent hidden camping<br>
+
+Added Grenade and medikit boxes can be hit by bullets on LAN<br>
+
+Added Parachute drops off after pressing jets button <br>
+
+Added /maxplayers to commands list in manual<br>
+
+Added New buttons for mp3 playing: F6 - Previous song; F7 - Next Song<br>
+
+Added New DM maps: remake of old HH, Bigfalls, Tropiccave<br>
+
+Added New CTF maps: ctf_Chernobyl, ctf_Crashed, ctf_Dropdown, ctf_Equinox, ctf_Maya<br>
+
+Added New INF map: inf_Invasion<br>
+
+Modified Mp3's are now played only through .m3u lists (put them in the \Mp3 folder)<br>
+
+Modified Minigun has less bullet spray<br>
+
+Modified Ak-74 has slightly more power<br>
+
+Modified Cursor is 2 times smaller with sniper line<br>
+
+Modified Kill console is longer<br>
+
+Modified Death ambient sound<br>
+
+Modified Guns stay 5 seconds longer<br>
+
+Modified Maps: ctf_B2b, ctf_Voland, Arena2 and other minor map changes<br>
+
+Modified No limit for unregistered version demo recordings<br>
+
+Modified More recoil in realistic mode for Ruger 77<br>
+
+Modified Survival mode enabled in Pointmatch and CTF<br>
+
+Modified Servers list sorts by ping after request<br>
+
+Modified Health and grenade box don't spawn at the same place after picking up<br>
+
+Modified Explosions have less impact on flags<br>
+
+Fixed Double shooting law exploit<br>
+
+Fixed Server filter options not saved<br>
+
+Fixed Flag collisions with map and player<br>
+
+Fixed Mp3 playing during intro<br>
+
+Fixed Spectators being kicked for cheating<br>
+
+Fixed Soldat window showing on the center of desktop instead of screen (for multi-monitor systems)<br>
+
+Fixed Space button could not be assigned to keys<br>
+
+Fixed Soldier shivering on horizontal polygons</font></font></p>
+
+<p class="style10"><font size="-1"><font face="Courier"><font face="Courier"><font face="Courier"><b>1.2.0</b> (21.01.2004)<br>
+
+  - Added demo recording (F8 key)<br>
+
+  - Added new gameplay intro<br>
+
+  - Added smooth polygon edges<br>
+
+  - Added spectator mode<br>
+
+  - Added player jet flames color can be changed for registered players<br>
+
+  - Added registered players will have a star next to their name on the players 
+  list<br>
+
+  - Added fast bullets pierce soldiers body<br>
+
+  - Added close and fast bullet shots are more brutal<br>
+
+  - Added grenades, M79 bullets and LAW missiles explode from each other<br>
+
+  - Added remakes of old maps: Arena3 and ctf_Death<br>
+
+  - Added smoke after explosion<br>
+
+  - Added new explosion effects<br>
+
+  - Added small effect on flag capture<br>
+
+  - Added new secret animation<br>
+
+  - Added sound when time appears in console<br>
+
+  - Added stationary gun use sound<br>
+
+  - Added every weapon has different bullet and shell graphics<br>
+
+  - Added total game texts localisation, localised files placed in 
+  Soldat\Txt\Languages<br>
+
+  - Added in-game statistics in Logs\GameStat.txt (updated every 30 seconds)<br>
+
+  - Added log.txt and consolelog.txt saved in Logs directory with numbers (for 
+  dedicated server)<br>
+
+  - Added custom profile taunts saved in Soldat\Profiles<br>
+
+  - Added players number display in non-team games in players list<br>
+
+  - Added network compression (if causes lag on slower machines can be disabled in 
+  Soldat.ini)<br>
+
+  - Added network code optimisation (less server bandwidth)<br>
+
+  - Added LAW and M79 grenade explode if hit player but lag does not show it<br>
+
+  - Added more anti-cheat solutions<br>
+
+  - Added remote admins can always join server even if full<br>
+
+  - Added spectator can switch to the previous player with jets button (default: 
+  right mouse click)<br>
+
+  - Added game can be joined from parameter with password ex. Soldat.exe 127.0.0.1 
+  23073 password<br>
+
+  - Added server joining through URL address ex. type in browser 
+  soldat://127.0.0.1:23073/<br>
+
+  - Added protection against invalid characters in name (only keyboard chars 
+  allowed)<br>
+
+  - Added names cannot be empty or have spaces in the end<br>
+
+  - Added two players can't have the same name (player name changes by server)<br>
+
+  - Added double pressing the command key '/' enters the last typed command<br>
+
+  - Added pressing the command key '/' displays corresponding player numbers in 
+  players menu (F1)<br>
+
+  - Added /Kick and /Ban commands can work with player numbers or names now ex. 
+  /Kick 2 or /Kick Loser<br>
+
+  - Added new server commands: <br>
+
+  /addbot1 [name], /addbot2, /addbot3, /addbot4 - for adding team bots<br>
+
+  /setteam1 [number], setteam2, setteam3, setteam4 - forces the player to join 
+  team<br>
+
+  /kicklast - kicks the player that last joined the server<br>
+
+  /respawntime [seconds] - changes the respawn time<br>
+
+  /maxrespawntime [seconds] - changes the maximum respawn time in team games<br>
+
+  /limit [number] - changes the current game limit (kills/points/captures)<br>
+
+  /timelimit [minutes] - changes the current time limit<br>
+
+  /bonus [number] - changes the frequency of bonuses<br>
+
+  /friendlyfire [0/1] - changes friendly fire settings <br>
+
+  /vote% [0-100] - changes the percentage of players needed to vote on a map or 
+  kick <br>
+
+  /password [word] - changes temporarily the server password<br>
+
+  /adminpass [word] - changes the remote admin password<br>
+
+  /adminlog [password] - for client, logs in as a remote admin on the server using 
+  password <br>
+
+  - Fixed player-map collision, no more sliding, less polygon holes<br>
+
+  - Fixed flag collision bugs<br>
+
+  - Fixed player can't move with no weapon if prone<br>
+
+  - Fixed idle animations not to interrupt firing<br>
+
+  - Fixed various map polygon bugs<br>
+
+  - Fixed some joining server issues<br>
+
+  - Fixed pick-up medikit health lag on client<br>
+
+  - Fixed LAW not disappearing bug<br>
+
+  - Fixed pinging servers with the same IP<br>
+
+  - Fixed "lobby forward" join and ping issues<br>
+
+  - Fixed flag appearing in wrong places on client<br>
+
+  - Fixed player getting kicked if didn't choose weapon and USSOCOM was disabled<br>
+
+  - Fixed two bows bug when one bow was knocked out<br>
+
+  - Fixed warp effect on client if player stood still and was shot<br>
+
+  - Fixed chat messages are now guaranteed to arrive on server<br>
+
+  - Fixed profile settings not working<br>
+
+  - Fixed link on profile selection screen<br>
+
+  - Fixed "List out of bounds" error if profile was deleted and used<br>
+
+  - Fixed game not saving some settings when started with "-start" parameter<br>
+
+  - Fixed Spas-12 reload issues<br>
+
+  - Fixed soldier doesn't play grenade animations or sounds if can't throw grenade<br>
+
+  - Fixed reload sound stops if player dies, throws out or changes weapon<br>
+
+  - Fixed player could not get up with default key if reloading<br>
+
+  - Fixed gun jammed when fired quickly after weapon change<br>
+
+  - Fixed player couldn't lose weapon if crouching or prone and other no weapon 
+  issues<br>
+
+  - Fixed double Spas-12 reload sound<br>
+
+  - Fixed Spas-12 shooting at self sometimes on client<br>
+
+  - Fixed M79 throwing out tons of shells bug<br>
+
+  - Fixed player can roll now when reloading<br>
+
+  - Fixed player could not get up if had no weapon<br>
+
+  - Fixed jumping backwards<br>
+
+  - Fixed player fired after clicking vote map or kick<br>
+
+  - Fixed weapons being more accurate when shot down-right or up-left<br>
+
+  - Fixed stationary gun flying bug<br>
+
+  - Fixed player losing weapon if picked up gun while changing weapons<br>
+
+  - Fixed weapon created with no force applied on client<br>
+
+  - Fixed time display in players menu<br>
+
+  - Fixed spawn effect team color<br>
+
+  - Fixed wrong message displayed on top of players list if there was a tie in 
+  team games<br>
+
+  - Fixed clanmatch option<br>
+
+  - Fixed player death animaton issues on client<br>
+
+  - Fixed player could not play idle animations if had no weapon<br>
+
+  - Fixed cursor player info not showing if team player was not standing or dead<br>
+
+  - Fixed player not disconnected if pressed Alt+F4<br>
+
+  - Fixed window not restoring properly after Alt+Tab or minimize<br>
+
+  - Fixed display of names containing character '|' in dedicated server panel<br>
+
+  - Modified functional keys: F4 - screenshot, F8 - record demo, F9 - minimize, 
+  F10 - pause<br>
+
+  - Modified player gets point for killing Rambo, player loses point if kills 
+  non-Rambo<br>
+
+  - Modified realistic mode field of view, you can not see what is behind you now<br>
+
+  - Modified realistic mode fall damage (only falling hurts, doesn't kill 
+  instantly)<br>
+
+  - Modified range of Barret scope increases slowly<br>
+
+  - Modified stationary gun layout on ctf_Kampf<br>
+
+  - Modified jet fuel regenerates 2 times faster when on ground<br>
+
+  - Modified stationary gun overheats after time and is less accurate after while 
+  of firing<br>
+
+  - Modified LAW can be fired while prone<br>
+
+  - Modified can use jet boots while rolling<br>
+
+  - Modified flamer does not kill owner<br>
+
+  - Modified flamer has longer distance<br>
+
+  - Modified physics - player speed affects bullets speed<br>
+
+  - Modified physics - player speed is not limited (1.0xb M79 tricks possible)<br>
+
+  - Modified bullets have more power impact on bodies (head shots are more 
+  spectacular)<br>
+
+  - Modified hit point power ratio: <br>
+
+  head shot was: 110% is: 120%<br>
+
+  torso shot is: 100%<br>
+
+  leg shot was: 80% is: 90%<br>
+
+  - Modified weapons stats:<br>
+
+  Auto weapons: power increased slightly<br>
+
+  FN Minimi: reload time decreased<br>
+
+  M79: speed increased by 5%<br>
+
+  LAW: shorter reload time, can be fired only from full crouch or prone, 1 second 
+  delay on start<br>
+
+  Chainsaw: is stronger and has less ammo<br>
+
+  - Modified respawn time in team games can't be less than 2 seconds to prevent 
+  immediate respawn<br>
+
+  - Modified multi kill messages<br>
+
+  - Modified big kill text ('killed by ...') can't be very large<br>
+
+  - Modified cursor does not center on respawn<br>
+
+  - Modified player name can hold 4 more characters<br>
+
+  - Modified background colors on most of the maps<br>
+
+  - Modified M79 bullet is more visible<br>
+
+  - Modified bigger, more brutal blood<br>
+
+  - Modified join and leave player messages are now team color coded<br>
+
+  - Modified chat message color<br>
+
+  - Modified maximum chat message letters<br>
+
+  - Modified stereo sound listener is now on player (you hear what your player 
+  hears, like you would be him)<br>
+
+  - Modified vote map and vote kick rules (default 33%+1 players needed to vote on 
+  something)<br>
+
+  - Modified team respawn counter sets smaller seconds values<br>
+
+  - Modified remote admins cannot be banned<br>
+
+  - Modified can play now with modified animations over network<br>
+
+  - Modified file logging is disabled by default because of performance issues<br>
+
+  - Modified log files - new format, unified date and time<br>
+
+  - Modified Terminator bot updated with new Terminator 3 quotes!<br>
+<br>
+
+  plus Soldat 1.1.5 fix:<br>
+
+  - Fixed 2 flags bug<br>
+
+  - Fixed bullets and explosions crazy multiplying on lag<br>
+
+  - Fixed weapon lose bug<br>
+
+  - Fixed weapon selection with keyboard if weapons disabled<br>
+
+  - Fixed client kill log file issues<br>
+
+  - Fixed players wrong respawn after map change<br>
+
+  - Fixed stationary gun bullet trail<br>
+
+  - Modified stationary gun bullet explode sound<br>
+
+  - Modified weapon graphics size restrictions
+  <br>
+
+&nbsp;</font></font></font></font></p>
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><b>1.1.5 </b>(13.07.2003)<br>
+
+  - Added stationary gun (M2 machine gun on some maps)<br>
+
+  - Added maps: Krab and ctf_Kampf (old version remake)<br>
+
+  - Added new lethal knife throw<br>
+
+  - Added option to disable USSOCOM, Knife, Chainsaw or LAW<br>
+
+  - Added LAN servers search option<br>
+
+  - Added "Never forward through lobby" for server option in setup<br>
+
+  - Added flames from flame bow<br>
+
+  - Added "Sniper Line" option (line between player and cursor)<br>
+
+  - Added option to easily add admins in dedicated server<br>
+
+  - Added server is now protected from "connect" flooding<br>
+
+  - Added protection against weapon graphics cheat<br>
+
+  - Added protection against animation, objects cheat<br>
+
+  - Fixed various map bugs<br>
+
+  - Fixed weapon losing bugs<br>
+
+  - Fixed flag missing bug when player out of map bounds<br>
+
+  - Fixed secondary weapon cheat<br>
+
+  - Fixed map maker cheat<br>
+
+  - Fixed modem jet cheat<br>
+
+  - Fixed missing and modified map scenery bug<br>
+
+  - Fixed weapons menu not showing when all primary weapons disabled<br>
+
+  - Fixed kills count display on right<br>
+
+  - Fixed bot problems when secondary weapons disabled<br>
+
+  - Modifed weapons menu button locks the menu<br>
+
+  - Modifed LAW reload is slightly faster<br>
+
+  - Modified chainsaw now has reload time and is weaker<br>
+
+  - Modifed jetpack can be used when crouched, prone and parachute on<br>
+
+  - Modifed LAW missile smoke slightly<br>
+
+  - Modified options layout<br>
+
+  - Improved some map visuals and spawn points</font><b><font face="Courier">
+<br>
+
+<br>
+
+
+  </font>
+  </b>
+
+
+  <font face="Courier">
+  <b>1.1.4
+  </b>(13.06.2003)<b><br>
+
+  </b>- Added new anti-lag system<br>
+
+- Added parachutes (when respawn is high)<br>
+
+- Added new maps: ctf_Voland, inf_Fortress<br>
+
+- Added new interface: Storm<br>
+
+- Added time and number of players displayed in players menu<br>
+
+- Added new secret player animation<br>
+
+- Added player raises weapon above teammate when crouching<br>
+
+- Added modifiable weapon names in 'txt\weaponnames.txt'<br>
+
+- Added option to choose secondary weapon<br>
+
+- Added new secondary weapon: Combat Knife<br>
+
+- Added new secondary weapon: Chainsaw<br>
+
+- Added new secondary weapon: M72 LAW<br>
+
+- Added /kill and /brutalkill commands for client<br>
+
+- Added flames effect when scored in Infiltration<br>
+
+- Added buttstock hit in close combat<br>
+
+- Added "points to leader" displayed in players status<br>
+
+- Added button (default Tab) to open/close weapons menu while dead<br>
+
+- Added server web page link or admins e-mail displayed in servers lobby page<br>
+
+- Added possibility to go prone when running fast or off ground (stunts)<br>
+
+- Added clients can join servers behind firewall forwarded through lobby<br>
+
+- Added servers list displays server system (Linux or Windows)<br>
+
+- Added flag capture info in console<br>
+
+- Fixed "no flag" not displayed in Infiltration<br>
+
+- Fixed some wrong map version<br>
+
+- Fixed banned for cheating issues<br>
+
+- Fixed wrong spawning when out of map bounds<br>
+
+- Fixed rolling with fists<br>
+
+- Fixed flames from flamer not showing on client<br>
+
+- Fixed flamer bonus cheat<br>
+
+- Fixed "scenery modified" bug when file not present<br>
+
+- Fixed team chat button disabled in non-team games<br>
+
+- Fixed flag stays with player when changing teams<br>
+
+- Fixed bullets and grenades duplicating on client<br>
+
+- Fixed jet fuel bug on map change<br>
+
+- Fixed Spas-12 could not be fired while reloading<br>
+
+- Fixed "Time left" in console minutes count<br>
+
+- Fixed "2 minutes" warning freeze<br>
+
+- Improved network gameplay<br>
+
+- Improved visuals and playability on some maps<br>
+
+- Changed Ruger 77 is now faster<br>
+
+- Changed long fall kills in realistic mode<br>
+
+- Changed map voting starts when first map vote starts<br>
+
+- Changed console text timings and length<br>
+
+- Changed points and team score doesn't decrease from self kills<br>
+
+- Changed and fixed flag capture messages</font></font></font></p>
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><b>1.1.3 </b>(07.03.2003)<b><br>
+
+- </b>Fixed spawn point bugs<br>
+
+- Fixed sliding when lying down<br>
+
+- Fixed Spas-12 pellets duplicating on network game<br>
+
+- Fixed desert eagles shooting one bullet on network<br>
+
+- Fixed Infiltration points counting when paused<br>
+
+- Fixed mp3 player next function<br>
+
+- Fixed non-passworded servers checking for password<br>
+
+- Fixed server settings applying on clients<br>
+
+- Fixed some connection problem issues<br>
+
+- Fixed in realistic mode carried flag visible if player isn't<br>
+
+- Fixed dying being too brutal sometimes in network game<br>
+
+- Fixed polygon sinking bug<br>
+
+- Fixed certain scenery element acting as liana in new maps<br>
+
+- Fixed weapon firing dummy bullet when grenade thrown on clients<br>
+
+- Fixed bad fire animation, sound coordination with bullet in network<br>
+
+- Fixed "invalid filename" error coming up when deleted interface<br>
+
+- Fixed USSOCOM firing on network<br>
+
+- Fixed config file loosing settings problem<br>
+
+- Fixed some certain map problems<br>
+
+- Added deaths counter in players score list<br>
+
+- Added punching someone knocks out his weapon<br>
+
+- Added message shown when lobby server is not responding<br>
+
+- Added game menu click sound<br>
+
+- Added grenade trail drawing<br>
+
+- Added bot with favourite weapon = Hands uses only fists<br>
+
+- Added little dust on bullet ground hit spot<br>
+
+- Added ALT+X can be used with binded taunts<br>
+
+- Added Team Chat button (default Y)<br>
+
+- Changed ping kick not to be so restrictive<br>
+
+- Changed player hit spots are more important (especially in Realistic Mode)<br>
+
+- Changed player can walk on some big slopes<br>
+
+- Changed kill message colors</font></font></font></p>
+
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><b><br>
+
+1.1.2 </b>(10.02.2003)<b><br>
+
+</b>- Fixed connecting problems - "free cam bug"<br>
+
+- Fixed prone get up, get down bug in network games<br>
+
+- Fixed roof respawn and collision bug on some maps<br>
+
+- Fixed game menu displaying<br>
+
+- Fixed sliding when prone in some situations<br>
+
+- Added team auto balance option in CTF &amp; Infiltration<br>
+
+- Added version number to ASE rules<br>
+
+- Added information in console about Survival or Realistic mode<br>
+
+- Changed Rambo bow respawn on Bridge map<br>
+
+- Changed team game servers show max. respawn time on servers lists</font></font></font></p>
+
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><b>1.1.1
+</b>(05.02.2003)<b><br>
+
+</b>- Fixed spawning on top of maps<br>
+
+- Fixed clients crash when host changes team<br>
+
+- Fixed connection problems on map change and voting<br>
+
+- Fixed some Anti-Cheat problems<br>
+
+- Fixed some conflicts with background programs<br>
+
+- Fixed some map and collision bugs<br>
+
+- Fixed spawn on death place bug<br>
+
+- Fixed some file access errors<br>
+
+- Fixed ASE showing bad respawn time<br>
+
+- Fixed Soldat removing from process list after Alt+F4<br>
+
+- Removed intro loading when joining game from param<br>
+
+- Removed GameStat.txt causing some I/O errors<br>
+
+- Changed soldier is slightly faster now<br>
+
+- Improved Ping All on request servers list<br>
+
+- Added one click on server pings it<br>
+
+- Added last server placed in favourites list<br>
+
+- Added registered user name in the exit menu<br>
+
+- Added File Logging in Setup Performance tab</font></font></font></p>
+
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><b>1.1.0
+</b>(03.02.2003)<b><br>
+
+</b>List of changes wasn't kept.<br>
+
+Most important:<br>
+
+- New game mode: Infiltration<br>
+
+- New game option: Realistic mode<br>
+
+- New maps and some re-made old ones<br>
+
+- New graphics (about 60 new scenery elements)<br>
+
+- New sounds (also about 60)<br>
+
+- New music tracks and mp3 player<br>
+
+- New customizable profiles and interfaces<br>
+
+- New Anti-Cheat protection</font></font></font></p>
+
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><b>1.0.5b </b>(23.08.2002)<br>
+
+- Better network code<br>
+
+- New servers browser<br>
+
+- New bonus: Cluster Grenades<br>
+
+- Bonuses are selectable now<br>
+
+- New game option: Survival Mode<br>
+
+- Added Time Limit<br>
+
+- New customizable player appearance (hair, helmets, chains)<br>
+
+- Improved corpse bleading<br>
+
+- New animation and way of throwing grenades<br>
+
+- Aiming is much harder when moving<br>
+
+- Slower M79 reload<br>
+
+- All weapons have more power now except M79 &amp; Barret<br>
+
+- Fixed little Alt+Tab problem<br>
+
+- New idle animations<br>
+
+- Berserker powers your weapons x4 now<br>
+
+- Clanmatch option<br>
+
+- Dedicated server doesn't use the whole CPU now<br>
+
+- Dedicated server can be minimized to the tray<br>
+
+- New editable server welcome message<br>
+
+- Dedicated server can communicate with the game players now<br>
+
+- Dedicated server can run from a parameter now<br>
+
+- Number of players in team are shown when selecting a team<br>
+
+- Restart game and nextmap option<br>
+
+- Players ban option<br>
+
+- You can turn off the changing bonus screen color (ATI problem)<br>
+
+- Respawn time is 2 times longer after suicide<br>
+
+- You get -1 points after suicide and teamkill in Pointmatch, CTF and Teammatch<br>
+
+- Option for showing real lag on objects<br>
+
+- Taking screenshots is now available<br>
+
+- Soldat Map Maker 1.0.1b (fixed some minor bugs, added grid option)<br>
+
+- New music track (Gore)</font></font></font></p>
+
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><b>1.0.4b
+</b>
+(06.08.2002)<b><br>
+
+</b>
+- Added defensive obstacles<font face="Courier"><br>
+
+- Player names under cursor<br>
+
+- New map: ctf_Laos<br>
+
+- Improved font visibility<br>
+
+- Improved grenade and bullets visibility<br>
+
+- Desert Eagle Akimbo<br>
+
+- Major weapon tweaking<br>
+
+- Multikill Combos in Pointmatch<br>
+
+- Bonus time decreased for 5 seconds<br>
+
+- Improved dedicated server<br>
+
+- Fixed some major network bugs<br>
+
+- Fixed repeating messages problem<br>
+
+- Fixed network bugs with flags<br>
+
+- Fixed some possible cheats in network game<br>
+
+- Fixed bug with vanishing grenades<br>
+
+- Window size doesn't change anymore when Large Fonts is on<br>
+
+- New sound for picking up the vest<br>
+
+- Jetpack has more fuel now but loads slower<br>
+
+- Added Soldat Map Maker 1.0b 
+</font></font></font></font></p>
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><b>1.0.3b
+</b>
+(29.07.2002)<b><br>
+
+</b>
+<font face="Courier">- Major weapon modifications<br>
+
+- Fixed bug with clones<br>
+
+- Fixed bug in the servers list ("out of bounds")<br>
+
+- Fixed some bugs in a network game ("access violation")<br>
+
+- Fixed bug with flags in network game<br>
+
+- New dedicated server</font></font></font></font></p>
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><b>1.0.2b
+</b>
+(28.07.2002)<b><br>
+
+</b>
+<font face="Courier">- Added new bonuses: Predator, Flame God, Bulletproof Vest, Berserker<br>
+
+- Fixed network code (working guaranteed packets)<br>
+
+- Fixed lots of bugs in a network game<br>
+
+- Option to name the server<br>
+
+- New sounds<br>
+
+- Minigun has smaller recoil<br>
+
+- Player with the BarretM82A1 can see 10% more<br>
+
+- Teamchat option<br>
+
+- Force software mode option</font></font></font></font></p>
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><b>1.0.1b </b>(24.07.2002)<font face="Courier"><br>
+
+
+  <font face="Courier">
+- Added sound device configuration<br>
+
+- Added video device configuration<br>
+
+- Fixed bug caused by bad host address<br>
+
+- You can return to the game after pressing Alt+Tab now<br>
+
+- Fixed Options (Respawn Time &amp; Mouse Sensitivity)<font face="Courier"><br>
+
+- More balanced weapons<br>
+
+- New animations<br>
+
+- Lobby Servers support<br>
+
+- Favourite servers option<br>
+
+- Player bleeds when hurt<br>
+
+- Added option to change port in Join Game<br>
+
+- Chat always appears in console in a network game now</font></font></font></font></font></font></p>
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><font face="Courier"><font face="Courier"><b>1.0.0b
+</b>()<b><br>
+
+</b>- 2 new maps: Cambodia &amp; Arena3<br>
+
+- 2 new CTF maps: ctf_Run &amp; ctf_Death<br>
+
+- Drasticly improved network code<br>
+
+- Better play on high pings<br>
+
+- Colored dot Lag-o-meter<br>
+
+- Improved bot navigation on maps<br>
+
+- Camera shows the winner of the game now<br>
+
+- Weapon tweaking<br>
+
+- Spas-12 has a recoil now<br>
+
+- More blood and other ornaments<br>
+
+- Improved dedicated server<br>
+
+- Added arrow that shows the player after respawn<br>
+
+- New two-colored gradient backgrounds<br>
+
+- Added players limit option<br>
+
+- Added maps list option<br>
+
+- Optimized maps<br>
+
+- Soldat Manual<br>
+
+- Added intro with music<br>
+
+- Added music during the game<br>
+
+- Improved sounds (new fly sound)</font></font></font></font></font></p>
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><font face="Courier"><font face="Courier"><b>0.9.9b</b> - third public beta (29.06.2003)<br>
+
+- Added kill limit option<br>
+
+- New game mode : Teammatch<br>
+
+- New game mode : Capture the Flag<br>
+
+- Added changeable skin color<br>
+
+- Added players and team status<br>
+
+- 3 new small maps : Fest, Mikra &amp; Bunker<br>
+
+- 2 new CTF maps : ctf_Kampf &amp; ctf_Viet<br>
+
+- Improved medikits and grenade boxes<br>
+
+- Added scene Antialiasing option<br>
+
+- New Select Weapon menu</font></font></font></font></font></p>
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><font face="Courier"><font face="Courier"><b>0.9.7b</b> - second public beta (14.06.2002)<br>
+
+- New network code base on UDP<br>
+
+- New game mode : Rambo Style<br>
+
+- Added 2 Bow types in Rambo Style<br>
+
+- 2 new maps : Karh &amp; Cave<br>
+
+- Added scenery graphics (grass, rubble, wood etc.)<br>
+
+- Changed weapon M4-Carbine to Steyr-AUG<br>
+
+- Better gameplay (more health)<br>
+
+- Weapon tweaking <br>
+
+- Added medikits and grenade boxes<br>
+
+- Maximum 6 grenades<br>
+
+- Soldat Config<br>
+
+- Added Ceasefire Time after respawn<br>
+
+- Removed the quit game problem<br>
+
+- Ready taunts option in Taunts.txt file<br>
+
+- Added controls change option<br>
+
+- Added server password option<br>
+
+- Added dedicated server option<br>
+
+- Removed shortcut problem (caused no sound)<br>
+
+- Bots are much smarter: they run away from grenades etc.<br>
+
+- Bots can talk and have their own opinions for life</font></font></font></font></font></p>
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><font face="Courier"><font face="Courier"><b>0.9.4b</b> - first public beta (09.05.2002)<br>
+
+- 7 maps<br>
+
+- 2 game modes : Deathmatch &amp; Pointmatch<br>
+
+- Network code based on Directplay</font></font></font></font></font></p>
+
+<p class="style10"><font face="Courier" size="-1"><font face="Courier"><font face="Courier"><font face="Courier"><font face="Courier"><b>0.0.0</b> - Soldat doesn't exist</font></font></font></font></font></p>
+
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3"><font face="Courier" size="2"><img src="line.png" border="0" height="5" width="640"></font></font></font></font></font></p>
+
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3"><font face="Courier" size="2">&nbsp;</font></font></font></font></font></p>
+
+
+<p>
+<font face="Courier" size="3"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3"><font face="Courier" size="2"><font size="3">
+<i><b><font face="Courier" size="4"><a name="DYSTRYBUCJA"><font size="4">:---===ライセンス: </font></a> </font> </b></i>
+
+</font>
+</font></font></font></font></font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="2">
+
+<p>著作権表示<br>
+
+<br>
+
+Soldat及びそれに関するすべてのファイルに対して著作権を主張します。<br>
+
+Copyright (C) 2001-07 Michal Marcinkowski. All rights reserved.<br>
+
+<br>
+
+=====================================================<br>
+
+<br>
+
+ライセンス<br>
+
+<br>
+
+Soldatはシェアウェアのソフトです。登録をすれば完全にプレイが楽しめます。
+
+<br>
+
+=====================================================<br>
+
+<br>
+
+再配布について<br>
+
+<br>
+
+<strong>未登録バージョンのSoldat</strong>.<br>
+
+シェアウェアバージョンの再配布について以下の項目を許可します: <br>
+
+a. 本ソフト及びその資料のコピーの作成<br>
+
+b. 改良が加えられていない本ソフトの正確なコピーの他人への配布<br>
+
+c. 本ソフト及びその資料の電子手段による配布<br>
+
+
+(メール、ホームページ、ディスク、雑誌付録を含むCD)<br>
+
+<br>
+
+上記の内容は無償で可能です。<br>
+
+<br>
+
+<strong>登録バージョンのSoldat</strong> <br>
+
+どんな目的であれ登録バージョンの本ソフト及びその資料の配布を完全に禁止します。<br>
+
+<br>
+
+=====================================================<br>
+
+<br>
+
+法的なものについて<br>
+
+<br>
+本ソフトウェアの逆アセンブル、リバースエンジニアリング、逆コンパイル、修正、あるいは改造を禁じます。<br>
+
+<br>
+
+マップ及びシーナリーを除いたすべての画像及び効果音は編集可能です。<br>
+
+編集された画像及び効果音はMODとして無料で配布可能です。<br>
+
+<br>
+
+本ソフトウェアは、「元のパッケージのまま」供給されます。<br>
+本ソフトによって生じたいかなる損害にも作者及び配布元は責任を負いません。
+
+
+
+<br>
+直接・間接を問わずいかなる手段においても本ソフトウェアの貸与及び売却を禁じます。</p>
+
+</font>
+<font face="Courier" size="3">
+
+<p><img src="line.png" border="0" height="5" width="640"></p>
+
+<p>&nbsp;</p>
+
+<a name="LISTA">
+<p><i><b><font size="4">:---===クレジット: </font> </b></i></p>
+</a>
+<p align="center">&nbsp;<b>&nbsp;&nbsp; Soldat: Programming, Graphics, Sound, 
+Music, Story;),<br>
+
+&nbsp;Soldat Lobby Server, Soldat Dedicated Server (Linux and Windows),<br>
+
+&nbsp;Soldat 
+Map Maker, Soldat Interface Maker, Soldat Admin, Soldat Setup,<br>
+
+&nbsp;Manual, Soldat Home Page:<br>
+
+<br>
+
+by</b></p>
+
+<p align="center"><b>Michal Marcinkowski (michal.marcinkowski&lt;at&gt;gmail.com)</b></p>
+
+<p align="center">&nbsp;</p>
+
+<p>&nbsp;Soldat Dedicated Server maintained by <a href="http://enesce.com">EnEsCe</a>.<br>
+<font><font><font><font><font><font><font face="Courier" size="3"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3">&nbsp;Soldat Lobby Server maintained by <a href="http://www.u13.net">FliesLikeABrick</a>.</font></font></font></font></font></font></font></font></font></font></font></font></p>
+
+<p>&nbsp;</p>
+
+<p><b>&nbsp;&nbsp;&nbsp; </b>Game music (Bloody Soil, Gore, Necromancide) by BSG&nbsp;(Guitar Pro <a href="http://www.soldat.pl/downloads/tabs.zip">tabulatures</a>) </p>
+
+</font></font></font></font></font></font>
+<p><font face="Courier" size="3"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3">Additional maps: <br>
+
+Bigfalls, Daybreak, inf_Moonshine, Blox, ctf_Snakebite, ctf_Ash by chakapoko maker<br>
+
+Tropiccave by Avarax <br>
+
+ctf_Chernobyl, ctf_Equinox by Doggfather<br>
+
+ctf_Crashed by Deo<br>
+
+ctf_Dropdown, ctf_Dropdown2 by Boxo<br>
+
+inf_Normandy by Enjoyincubus<br>
+
+htf_Arch by Sticky<br>
+
+ctf_Maya, htf_Boxed, htf_Futura, htf_Nuclear, DesertWind htf_Rubik, ctf_Maya2, ctf_Lanubya by grand_diablo<br>
+
+htf_Desert by DeMonIc<br>
+
+ctf_Nuubia by Troskal<br>
+
+htf_Dusk by Michal<br>
+
+htf_Muygen by The Geologist (waypoints by Keron Cyst)</font></font></font></font></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3">  Remakes - Ctf_Death by NuZZ, HH by Stalky, Arena2, ctf_Death2 by grand_diablo <br>
+
+  Improved original maps - inf_Outpost, MrSnowman, Bridge, Bunker, ctf_Viet by Enjoyincubus<br>
+
+"Cabbage" interface by NightCabbage<br>
+
+"Micro1" interface by 
+    
+
+     grand_diablo<br>
+
+"Lacey v2" interface by Urhos<br>
+
+"Soldat Style " interface by Michal </font></font></font></font></font></font></p>
+
+<p><font face="Courier" size="3"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3">EVO Soldat gostek-gfx by Michal<br>
+
+&nbsp;</font></font></font></font></font></font></p>
+
+<font face="Courier" size="3"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3">
+<p><b>Tools and components used in development: </b> </p>
+
+<p>- Borland Delphi 6 (<a href="http://www.borland.com">http://www.borland.com</a>)<br>
+
+- DirectX 8 + Jedi DirectX 8 headers (<a href="http://www.microsoft.com">http://www.microsoft.com</a>;
+<a href="http://www.crazyentertainment.net">http://www.crazyentertainment.net</a>;
+<a href="http://clootie.narod.ru">http://clootie.narod.ru</a>)<br>
+
+- FMOD (<a href="http://www.fmod.org">http://www.fmod.org</a>)<br>
+
+- Flatstyle (<a href="http://www.flatsyle.de">http://www.flatsyle.de</a>)<br>
+
+- BlackUDP by Lifepower<br>
+
+- Mode Enumeration Unit from PowerDraw (c) Lifepower 
+(<a href="http://turbo.gamedev.net">http://turbo.gamedev.net</a>)<br>
+
+- DCPcrypt by David Barton (<a href="http://www.cityinthesky.co.uk">http://www.cityinthesky.co.uk</a>)<br>
+
+- JVCL (<a href="http://www.delphi-jedi.org">http://www.delphi-jedi.org</a>)</p>
+
+<p><b><br>
+
+Special thanks to:</b></p>
+
+<p>+ For all of the Soldat Community! Everybody that mailed me and talked about 
+Soldat on message boards, giving me good advice and motivating me<br>
+
++ Warsztat (<a href="http://www.gamedev.pl/">http://warsztat.pac.pl</a>) 
+- for their help in testing the betas<br>
+
++  Thomasa Jakobsen from IO Interactive for his wonderful article (<a href="http://www.teknikus.dk/tj/gdc2001.htm">http://www.teknikus.dk/tj/gdc2001.htm</a>).<br>
+
++ Number27 for his tutorials (I don't have the address)<br>
++ <font><font><font><font><font><font><font face="Courier" size="3"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3">FliesLikeABrick for hosting and administering Soldat Forums (<a href="http://soldatforum.dnagames.net/">http://www.soldatforums.com/</a>) 
+and all the moderators</font></font></font></font></font></font></font></font></font></font></font></font><br>
+
++ DNA.Styx for administrating the old Soldat Forums<br>
+
++ the Soldat Community members, especially: Ardaen for helping with the 
+anti-cheat and network code, b00stA for the URL shortcut and scripts, Hercules Poirot for 
+the polygon bugs project and people who helped him<br>
+
++ the Soldat Forums beta testing team<br>
+
++ Dolny for hosting the first official web site, promotion and ideas<br>
+
++ TRSSam for providing the first lobby server<br>
+
++ Special special thanks for all those that tested Soldat and made it a better 
+game (yes its you!)<br>
+
++ In a short version I thank: the electric company, my computers, 
+my keyboard,  start menu, John Pascal (or whatever his name is), John 'god' 
+Carmack, Bill G., Sylvester S., Arnold S. ...<br>
+
++ To all that should be here but they didn't remind me that they should be 
+here;)</p>
+
+<p><img src="line.png" border="0" height="5" width="640"></p>
+
+<p>&nbsp;</p>
+
+<a name="KONTAKT">
+<p><i><b><font size="4">:---===連絡先: </font> </b></i></p>
+</a>
+<p>E-mail : michal.marcinkowski&lt;at&gt;gmail.com<br>
+
+公式ホームページ : <a href="http://www.soldat.pl">http://www.soldat.pl<br>
+</a><span style="color: rgb(0, 0, 0);">公式フォーラム: <a href="http://www.soldatforums.com">http://www.soldatforums.com</a></span><a href="http://www.soldat.pl"><br>
+</a></p>
+<p>&nbsp;</p>
+
+
+
+<p>
+<img src="line.png" border="0" height="5" width="768"><br>
+
+
+ 
+ 
+
+</p>
+
+
+</font>
+</font></font></font></font></font>
+<p align="left"><font face="Courier" size="3"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier" size="3"><font face="Courier" size="2"><font face="Courier"><a href="#INDEX">[目次]</a></font></font></font></font></font></font></p>
+
+
+</body>
+</html>
